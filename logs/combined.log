@@ -1,0 +1,87 @@
+2025-03-31T12:38:41.349Z - youtube_summary - error - Database setup error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+2025-03-31T12:38:41.361Z - youtube_summary - error - Database initialization failed SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+2025-03-31T12:40:08.489Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T12:40:08.529Z - youtube_summary - error - Database setup error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+2025-03-31T12:40:08.533Z - youtube_summary - error - Database initialization failed SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+2025-03-31T12:40:28.680Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T12:40:28.746Z - youtube_summary - error - Database setup error: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+2025-03-31T12:40:28.753Z - youtube_summary - error - Database initialization failed SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+2025-03-31T12:56:34.868Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T12:56:35.787Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T12:56:35.791Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:03:21.650Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:03:22.130Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:03:22.135Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:04:42.793Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:04:43.317Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:04:43.322Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:09:53.848Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:09:54.310Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:09:54.315Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:11:28.626Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:11:29.195Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:11:29.196Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:11:40.859Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:11:41.106Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:11:41.111Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:12:16.053Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:12:16.437Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:12:16.441Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:12:54.297Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:12:54.976Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:12:54.980Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:14:36.594Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:14:37.241Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:14:37.245Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:15.783Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:15:16.143Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:16.148Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:27.905Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:15:28.339Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:28.344Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:42.198Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:15:42.767Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:42.772Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:53.596Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:15:54.043Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:15:54.049Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:20:16.999Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:20:18.018Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:20:18.022Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:29:47.737Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:29:48.794Z - youtube_summary - error - Database setup error: no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:29:48.799Z - youtube_summary - error - Database initialization failed no pg_hba.conf entry for host "5.178.137.102", user "postgres", database "postgres", no encryption
+2025-03-31T13:33:24.834Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:33:26.913Z - youtube_summary - info - Database setup completed
+2025-03-31T13:33:26.916Z - youtube_summary - info - Database initialization complete
+2025-03-31T13:38:46.456Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:38:48.473Z - youtube_summary - info - Database setup completed
+2025-03-31T13:38:48.474Z - youtube_summary - info - Database initialization complete
+2025-03-31T13:39:21.086Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:39:22.725Z - youtube_summary - info - Database setup completed
+2025-03-31T13:39:22.728Z - youtube_summary - info - Database initialization complete
+2025-03-31T13:39:40.352Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:39:42.421Z - youtube_summary - info - Database setup completed
+2025-03-31T13:39:42.424Z - youtube_summary - info - Database initialization complete
+2025-03-31T13:40:31.543Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:40:34.238Z - youtube_summary - info - Database setup completed
+2025-03-31T13:40:34.240Z - youtube_summary - info - Database initialization complete
+2025-03-31T13:42:42.005Z - youtube_summary - info - Received video submission: undefined, model: undefined, language: undefined
+2025-03-31T13:44:38.934Z - youtube_summary - info - OpenAI client initialized successfully
+2025-03-31T13:44:43.110Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: undefined
+2025-03-31T13:44:43.111Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-03-31T13:44:43.114Z - youtube_summary - info - Generated task ID: 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6
+2025-03-31T13:44:43.114Z - youtube_summary - info - Registering task in database
+2025-03-31T13:44:47.031Z - youtube_summary - info - Starting background processing for task 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6
+2025-03-31T13:44:47.895Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6
+2025-03-31T13:44:47.896Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-03-31T13:44:49.466Z - youtube_summary - info - Database setup completed
+2025-03-31T13:44:49.468Z - youtube_summary - info - Database initialization complete
+2025-03-31T13:44:56.135Z - youtube_summary - info - Response data type: array
+2025-03-31T13:44:56.135Z - youtube_summary - info - Successfully extracted transcript of length 2472
+2025-03-31T13:45:12.549Z - youtube_summary - info - Generated summary with emoji 🧵
+2025-03-31T13:45:12.550Z - youtube_summary - info - Updating task 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6 as completed
+2025-03-31T13:45:13.457Z - youtube_summary - info - Task 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6 completed successfully
+2025-03-31T13:46:04.413Z - youtube_summary - info - Fetching status for task 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6
+2025-03-31T13:46:05.425Z - youtube_summary - info - Task 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6 status: completed
+2025-03-31T13:46:05.426Z - youtube_summary - info - Returning completed task data for 8078ac6a-b8a6-4e87-b1d9-e47455dedcf6
