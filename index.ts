@@ -5,17 +5,22 @@ import { v4 as uuidv4 } from "uuid";
 import dotenv from "dotenv";
 import { Pool, PoolConfig } from "pg";
 import axios, { AxiosInstance, AxiosResponse } from "axios";
-import moment from "moment";
+import { Blob } from "fetch-blob"; // Import Blob from fetch-blob
+import FormData from "form-data";
+import moment, { lang } from "moment";
+import fs from "fs";
+import path from "path";
 import { createLogger, format, transports } from "winston";
+import bufferToStream from "buffer-to-stream"; // To convert buffer to stream
 import OpenAI from "openai";
+import { FsReadStream } from "openai/_shims/auto/types";
+import { error } from "console";
 
-console.log("aqvar");
 // --------------------------
 // Environment Configuration
 // --------------------------
 dotenv.config();
 
-console.log(process.env.GOOGLE_API_KEY);
 // --------------------------
 // Type Definitions
 // --------------------------
@@ -757,6 +762,73 @@ app.get(
   }
 );
 
+app.post("/message", async (req: Request, res: Response): Promise<any> => {
+  const text = req.body.transcriptionText;
+  const history = req.body.chatHistory;
+  const newMessage = req.body.newMessage;
+  res.json(await processChat(text, history, newMessage));
+});
+async function processChat(
+  transcriptionText: string,
+  chatHistory: OpenAI.Chat.Completions.ChatCompletionMessageParam[],
+  newMessage: string
+) {
+  if (!openaiClient) {
+    logger.warning(
+      "OpenAI client not available. Using fallback summary generation."
+    );
+    return {
+      emoji: "📝",
+      summary: `Chat not available`,
+    };
+  }
+  // Append the new user message to the chat history
+  chatHistory.push({ role: "user", content: newMessage });
+
+  // Add the video transcription as context (if it's the start of a new video or topic)
+  const systemPrompt = `
+  You are InovApp's AI assistant. Your role is to:
+  1. You must act like INNOVAPP LLC AI assistant .
+  2. respond with new message.
+  3. Answer user questions about the note topic.
+  4. Engage in a discussion about the note content.
+  You are always helpful, engaging, and informative.
+`;
+
+  // Include transcription in the system context, if necessary
+  const fullChatHistory: OpenAI.Chat.Completions.ChatCompletionMessageParam[] =
+    [
+      { role: "system", content: systemPrompt },
+      {
+        role: "system",
+        content: `The video transcript is: ${transcriptionText}`,
+      }, // Add the transcription
+      ...chatHistory,
+    ];
+
+  // Send the combined data to GPT
+  const response = await openaiClient.chat.completions.create({
+    model: "gpt-4",
+    messages: [
+      { role: "system", content: systemPrompt },
+      {
+        role: "system",
+        content: `The video transcript is: ${transcriptionText}`,
+      }, // Add the transcription
+      ...fullChatHistory,
+    ],
+  });
+
+  // Get assistant's response
+  const assistantMessage = response.choices[0].message.content;
+
+  // Return response and update chat history
+  chatHistory.push({ role: "assistant", content: assistantMessage });
+  return assistantMessage;
+}
+
+// Example usage
+
 // --------------------------
 // YouTube URL Helper
 // --------------------------
@@ -768,3 +840,154 @@ function extractYouTubeId(url: string): string | null {
 // --------------------------
 // Export Components
 // --------------------------
+async function downloadAudioAsBuffer(audioUrl: string): Promise<Buffer> {
+  const response = await axios.get(audioUrl, { responseType: "arraybuffer" });
+  return Buffer.from(response.data); // Convert the response to a Buffer
+}
+
+async function transcribeAudio(
+  audioUrl: string,
+  audioId: string,
+  language: string
+): Promise<void> {
+  try {
+    if (!openaiClient) {
+      console.warn("OpenAI client not available.");
+      return;
+    }
+
+    // Step 1: Download the audio file as a buffer from the URL
+    const audioBuffer = await downloadAudioAsBuffer(audioUrl);
+
+    // Step 2: Define the path to save the M4A file temporarily on the server
+    const filePath = path.join(__dirname, "temp", "audio.m4a");
+
+    // Ensure the directory exists or create it
+    fs.mkdirSync(path.dirname(filePath), { recursive: true });
+
+    // Step 3: Save the audio buffer as an M4A file temporarily on the server
+    fs.writeFileSync(filePath, audioBuffer); // Write the buffer to the file
+
+    // Step 4: Create a readable stream from the file for OpenAI API
+    const audioStream = fs.createReadStream(filePath);
+
+    // Step 5: Send the file to OpenAI's transcription API
+    const transcription = await openaiClient.audio.transcriptions.create({
+      model: "whisper-1",
+      file: audioStream, // Send the readable stream
+      language: language, // Optionally specify the language
+    });
+
+    // Step 6: Handle the transcription result
+    console.log("Transcription:", transcription.text); // Output the transcribed text
+
+    if (transcription) {
+      const summaryResult = await generateSummary(transcription.text, language);
+      let title = `Video ${audioId}`;
+      let emoji = "📝";
+      emoji = summaryResult.emoji;
+      await updateTaskStatus(audioId, "completed", {
+        emoji: emoji,
+        summary: summaryResult.summary,
+        title,
+        transcript: transcription.text,
+      });
+    }
+    // Generate summary if we have valid transcript
+
+    logger.info(`Task ${audioId} completed successfully`);
+
+    // Return the transcription text
+    // return tra;
+  } catch (error) {
+    console.error("Error during transcription:", error);
+    throw new Error("Transcription failed");
+  } finally {
+    // Step 7: Delete the temporary file after transcription is done
+    try {
+      fs.unlinkSync(path.join(__dirname, "temp", "audio.m4a"));
+      console.log("Temporary audio file deleted.");
+    } catch (err) {
+      console.error("Error deleting temporary file:", err);
+    }
+  }
+}
+
+app.post("/submit_voice", async (req: Request, res: Response): Promise<any> => {
+  const { audio_link, outputLanguageCode } = req.body;
+  if (!audio_link) {
+    return res.status(400).json({ error: "no audio link" });
+  }
+  try {
+    const soundUrlMatch = audio_link.match(/(?:v=|\/)([a-zA-Z0-9_-]{11})/);
+    if (!soundUrlMatch) {
+      throw new Error("Invalid YouTube URL format");
+    }
+    const sound_id = soundUrlMatch[1];
+    const task_id = uuidv4();
+
+    await insertTask(
+      task_id,
+      sound_id,
+      audio_link,
+      "gpt-4o-mini",
+      outputLanguageCode
+    );
+
+    BackgroundTasks.add(() =>
+      transcribeAudio(audio_link, task_id, outputLanguageCode)
+    );
+    return res.json({ task_id });
+  } catch (err) {
+    throw err;
+  }
+});
+
+app.post(
+  "/submit_video",
+  async (
+    req: Request<{}, {}, VideoRequest>,
+    res: Response<TaskResponse | { error: string }>
+  ): Promise<any> => {
+    const { video_link, model, summaryLanguage } = req.body;
+
+    logger.info(
+      `Received video submission: ${video_link}, model: ${model}, language: ${summaryLanguage}`
+    );
+
+    if (!video_link) {
+      // logger.warning("No video link provided in request");
+      return res.status(400).json({ error: "No video link provided" });
+    }
+
+    try {
+      // Extract video ID from the link
+      const videoIdMatch = video_link.match(/(?:v=|\/)([a-zA-Z0-9_-]{11})/);
+      if (!videoIdMatch) {
+        throw new Error("Invalid YouTube URL format");
+      }
+      const video_id = videoIdMatch[1];
+      logger.info(`Extracted video ID: ${video_id}`);
+
+      // Generate a unique task ID
+      const task_id = uuidv4();
+      logger.info(`Generated task ID: ${task_id}`);
+
+      // Register the task in the database
+      logger.info("Registering task in database");
+      await insertTask(task_id, video_id, video_link, model, summaryLanguage);
+
+      // Start processing in the background
+      logger.info(`Starting background processing for task ${task_id}`);
+      BackgroundTasks.add(() =>
+        processVideo(video_id, task_id, model, summaryLanguage)
+      );
+
+      return res.json({ task_id });
+    } catch (error: any) {
+      const errorMsg = error.message;
+      logger.error(`Submission error: ${errorMsg}`);
+      return res.status(400).json({ error: errorMsg });
+    }
+  }
+);
