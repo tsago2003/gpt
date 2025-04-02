@@ -584,7 +584,6 @@ async function processVideo(
         await rapidApiClient.get("", {
           params: {
             video_id: videoId,
-            lang: "en",
           },
         });
 
