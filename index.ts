@@ -16,6 +16,7 @@ import OpenAI from "openai";
 import { FsReadStream } from "openai/_shims/auto/types";
 import { error } from "console";
 
+import { authenticateToken } from "./authmiddleware";
 // --------------------------
 // Environment Configuration
 // --------------------------
@@ -425,15 +426,6 @@ async function updateTaskStatus(
   }
 }
 
-// --------------------------
-// Utility Functions
-// --------------------------
-function extractVideoId(url: string): string {
-  const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|&v=)([^#&?]*).*/;
-  const match = url.match(regExp);
-  return match && match[2].length === 11 ? match[2] : "";
-}
-
 interface Task {
   task_id: string;
   video_id: string;
@@ -542,17 +534,21 @@ The transcript is: ${transcriptText}`;
   }
 }
 
-app.get("/tasks/:taskId", async (req: Request, res: Response): Promise<any> => {
-  try {
-    const task = await getTask(req.params.taskId);
-    if (!task) {
-      return res.status(404).json({ error: "Task not found" });
+app.get(
+  "/tasks/:taskId",
+  authenticateToken,
+  async (req: Request, res: Response): Promise<any> => {
+    try {
+      const task = await getTask(req.params.taskId);
+      if (!task) {
+        return res.status(404).json({ error: "Task not found" });
+      }
+      res.json(task);
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
     }
-    res.json(task);
-  } catch (error: any) {
-    res.status(500).json({ error: error.message });
   }
-});
+);
 
 interface TranscriptResponse {
   transcriptionAsText?: string;
@@ -674,6 +670,7 @@ async function processVideo(
 
 app.post(
   "/submit_video",
+  authenticateToken,
   async (
     req: Request<{}, {}, VideoRequest>,
     res: Response<TaskResponse | { error: string }>
@@ -762,15 +759,19 @@ app.get(
   }
 );
 
-app.post("/message", async (req: Request, res: Response): Promise<any> => {
-  const text = req.body.transcriptionText;
-  const history = req.body.chatHistory;
-  const newMessage = req.body.newMessage;
-  if (!text || !history || !newMessage) {
-    return res.status(400).json({ error: "Wrong request body" });
+app.post(
+  "/message",
+  authenticateToken,
+  async (req: Request, res: Response): Promise<any> => {
+    const text = req.body.transcriptionText;
+    const history = req.body.chatHistory;
+    const newMessage = req.body.newMessage;
+    if (!text || !history || !newMessage) {
+      return res.status(400).json({ error: "Wrong request body" });
+    }
+    return res.json(await processChat(text, history, newMessage));
   }
-  return res.json(await processChat(text, history, newMessage));
-});
+);
 async function processChat(
   transcriptionText: string,
   chatHistory: OpenAI.Chat.Completions.ChatCompletionMessageParam[],
@@ -920,38 +921,43 @@ async function transcribeAudio(
   }
 }
 
-app.post("/submit_voice", async (req: Request, res: Response): Promise<any> => {
-  const { audio_link, outputLanguageCode } = req.body;
-  if (!audio_link || outputLanguageCode) {
-    return res.status(400).json({ error: "wrong request body" });
-  }
-  try {
-    const soundUrlMatch = audio_link.match(/(?:v=|\/)([a-zA-Z0-9_-]{11})/);
-    if (!soundUrlMatch) {
-      throw new Error("Invalid YouTube URL format");
+app.post(
+  "/submit_voice",
+  authenticateToken,
+  async (req: Request, res: Response): Promise<any> => {
+    const { audio_link, outputLanguageCode } = req.body;
+    if (!audio_link || outputLanguageCode) {
+      return res.status(400).json({ error: "wrong request body" });
     }
-    const sound_id = soundUrlMatch[1];
-    const task_id = uuidv4();
+    try {
+      const soundUrlMatch = audio_link.match(/(?:v=|\/)([a-zA-Z0-9_-]{11})/);
+      if (!soundUrlMatch) {
+        throw new Error("Invalid YouTube URL format");
+      }
+      const sound_id = soundUrlMatch[1];
+      const task_id = uuidv4();
 
-    await insertTask(
-      task_id,
-      sound_id,
-      audio_link,
-      "gpt-4o-mini",
-      outputLanguageCode
-    );
+      await insertTask(
+        task_id,
+        sound_id,
+        audio_link,
+        "gpt-4o-mini",
+        outputLanguageCode
+      );
 
-    BackgroundTasks.add(() =>
-      transcribeAudio(audio_link, task_id, outputLanguageCode)
-    );
-    return res.json({ task_id });
-  } catch (err) {
-    throw err;
+      BackgroundTasks.add(() =>
+        transcribeAudio(audio_link, task_id, outputLanguageCode)
+      );
+      return res.json({ task_id });
+    } catch (err) {
+      throw err;
+    }
   }
-});
+);
 
 app.post(
   "/submit_video",
+  authenticateToken,
   async (
     req: Request<{}, {}, VideoRequest>,
     res: Response<TaskResponse | { error: string }>
