@@ -644,6 +644,7 @@ async function processVideo(
           console.warn("No transcript extracted, cannot generate summary");
         }
       } else {
+        console.log(response);
         logger.error(
           `Transcript extraction failed with status code ${response.status}`
         );

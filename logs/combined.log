@@ -810,3 +810,6 @@
 2025-04-02T19:57:20.677Z - youtube_summary - info - Fetching status for task 2c02834f-73d3-4abb-9300-f4ee154ced32
 2025-04-02T19:57:20.778Z - youtube_summary - info - Task 2c02834f-73d3-4abb-9300-f4ee154ced32 status: completed
 2025-04-02T19:57:20.779Z - youtube_summary - info - Returning completed task data for 2c02834f-73d3-4abb-9300-f4ee154ced32
+2025-04-02T20:10:11.847Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T20:10:13.826Z - youtube_summary - info - Database setup completed
+2025-04-02T20:10:13.829Z - youtube_summary - info - Database initialization complete
