@@ -491,7 +491,9 @@ Format your response as follows:
 EMOJI: [single emoji here]
 
 SUMMARY:
-[your summary here with proper formatting to ${summaryLanguage} Language]
+[your summary here with proper formatting to ${summaryLanguage} Language,  dont forget to write it in ${summaryLanguage} its the most important thing here.]
+
+the transcript must be translated to ${summaryLanguage}
 
 The transcript is: ${transcriptText}`;
 
