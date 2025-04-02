@@ -766,7 +766,10 @@ app.post("/message", async (req: Request, res: Response): Promise<any> => {
   const text = req.body.transcriptionText;
   const history = req.body.chatHistory;
   const newMessage = req.body.newMessage;
-  res.json(await processChat(text, history, newMessage));
+  if (!text || !history || !newMessage) {
+    return res.status(400).json({ error: "Wrong request body" });
+  }
+  return res.json(await processChat(text, history, newMessage));
 });
 async function processChat(
   transcriptionText: string,
@@ -807,24 +810,28 @@ async function processChat(
     ];
 
   // Send the combined data to GPT
-  const response = await openaiClient.chat.completions.create({
-    model: "gpt-4",
-    messages: [
-      { role: "system", content: systemPrompt },
-      {
-        role: "system",
-        content: `The video transcript is: ${transcriptionText}`,
-      }, // Add the transcription
-      ...fullChatHistory,
-    ],
-  });
+  try {
+    const response = await openaiClient.chat.completions.create({
+      model: "gpt-4o-mini",
+      messages: [
+        { role: "system", content: systemPrompt },
+        {
+          role: "system",
+          content: `The video transcript is: ${transcriptionText}`,
+        }, // Add the transcription
+        ...fullChatHistory,
+      ],
+    });
 
-  // Get assistant's response
-  const assistantMessage = response.choices[0].message.content;
+    // Get assistant's response
+    const assistantMessage = response.choices[0].message.content;
 
-  // Return response and update chat history
-  chatHistory.push({ role: "assistant", content: assistantMessage });
-  return assistantMessage;
+    // Return response and update chat history
+    chatHistory.push({ role: "assistant", content: assistantMessage });
+    return assistantMessage;
+  } catch (err) {
+    return err;
+  }
 }
 
 // Example usage
@@ -915,8 +922,8 @@ async function transcribeAudio(
 
 app.post("/submit_voice", async (req: Request, res: Response): Promise<any> => {
   const { audio_link, outputLanguageCode } = req.body;
-  if (!audio_link) {
-    return res.status(400).json({ error: "no audio link" });
+  if (!audio_link || outputLanguageCode) {
+    return res.status(400).json({ error: "wrong request body" });
   }
   try {
     const soundUrlMatch = audio_link.match(/(?:v=|\/)([a-zA-Z0-9_-]{11})/);
@@ -951,6 +958,9 @@ app.post(
   ): Promise<any> => {
     const { video_link, model, summaryLanguage } = req.body;
 
+    if (!video_link || !model || !summaryLanguage) {
+      return res.status(400).json({ error: "wrong request body" });
+    }
     logger.info(
       `Received video submission: ${video_link}, model: ${model}, language: ${summaryLanguage}`
     );

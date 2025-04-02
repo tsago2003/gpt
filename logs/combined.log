@@ -184,3 +184,81 @@
 2025-04-01T12:55:54.649Z - youtube_summary - info - Fetching status for task bc966cdf-c94b-4bbf-850a-f6223b92a997
 2025-04-01T12:55:55.368Z - youtube_summary - info - Task bc966cdf-c94b-4bbf-850a-f6223b92a997 status: completed
 2025-04-01T12:55:55.369Z - youtube_summary - info - Returning completed task data for bc966cdf-c94b-4bbf-850a-f6223b92a997
+2025-04-02T09:42:03.032Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:42:05.378Z - youtube_summary - info - Database setup completed
+2025-04-02T09:42:05.381Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:43:22.613Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:43:24.289Z - youtube_summary - info - Database setup completed
+2025-04-02T09:43:24.299Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:43:47.837Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:43:49.654Z - youtube_summary - info - Database setup completed
+2025-04-02T09:43:49.657Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:44:24.282Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:44:26.620Z - youtube_summary - info - Database setup completed
+2025-04-02T09:44:26.621Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:44:33.107Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:44:35.119Z - youtube_summary - info - Database setup completed
+2025-04-02T09:44:35.120Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:45:18.252Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:45:20.175Z - youtube_summary - info - Database setup completed
+2025-04-02T09:45:20.178Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:45:50.831Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:45:52.431Z - youtube_summary - info - Database setup completed
+2025-04-02T09:45:52.433Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:46:23.450Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:46:25.054Z - youtube_summary - info - Database setup completed
+2025-04-02T09:46:25.056Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:47:01.939Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:47:03.166Z - youtube_summary - info - Database setup completed
+2025-04-02T09:47:03.169Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:47:17.544Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:47:19.573Z - youtube_summary - info - Database setup completed
+2025-04-02T09:47:19.576Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:48:12.973Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:48:15.042Z - youtube_summary - info - Database setup completed
+2025-04-02T09:48:15.045Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:49:53.792Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:49:55.541Z - youtube_summary - info - Database setup completed
+2025-04-02T09:49:55.542Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:50:27.136Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:50:29.015Z - youtube_summary - info - Database setup completed
+2025-04-02T09:50:29.018Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:52:50.667Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:52:52.580Z - youtube_summary - info - Database setup completed
+2025-04-02T09:52:52.583Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:53:42.672Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:53:44.703Z - youtube_summary - info - Database setup completed
+2025-04-02T09:53:44.705Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:53:55.141Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:53:56.683Z - youtube_summary - info - Database setup completed
+2025-04-02T09:53:56.686Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:54:17.641Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:54:19.928Z - youtube_summary - info - Database setup completed
+2025-04-02T09:54:19.930Z - youtube_summary - info - Database initialization complete
+2025-04-02T09:54:51.288Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T09:54:53.414Z - youtube_summary - info - Database setup completed
+2025-04-02T09:54:53.416Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:48:01.948Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:48:04.331Z - youtube_summary - info - Database setup completed
+2025-04-02T10:48:04.332Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:49:05.860Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:49:08.199Z - youtube_summary - info - Database setup completed
+2025-04-02T10:49:08.204Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:51:00.284Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:51:02.786Z - youtube_summary - info - Database setup completed
+2025-04-02T10:51:02.789Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:52:34.830Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:52:37.128Z - youtube_summary - info - Database setup completed
+2025-04-02T10:52:37.130Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:53:26.904Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:53:28.617Z - youtube_summary - info - Database setup completed
+2025-04-02T10:53:28.618Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:53:45.672Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:53:47.643Z - youtube_summary - info - Database setup completed
+2025-04-02T10:53:47.646Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:54:12.184Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:54:14.644Z - youtube_summary - info - Database setup completed
+2025-04-02T10:54:14.647Z - youtube_summary - info - Database initialization complete
+2025-04-02T10:55:33.850Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T10:55:36.143Z - youtube_summary - info - Database setup completed
+2025-04-02T10:55:36.147Z - youtube_summary - info - Database initialization complete
