@@ -289,3 +289,497 @@
 2025-04-02T11:34:14.619Z - youtube_summary - info - OpenAI client initialized successfully
 2025-04-02T11:34:16.335Z - youtube_summary - info - Database setup completed
 2025-04-02T11:34:16.336Z - youtube_summary - info - Database initialization complete
+2025-04-02T11:41:36.060Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T11:41:38.210Z - youtube_summary - info - Database setup completed
+2025-04-02T11:41:38.212Z - youtube_summary - info - Database initialization complete
+2025-04-02T11:41:42.952Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T11:41:44.764Z - youtube_summary - info - Database setup completed
+2025-04-02T11:41:44.767Z - youtube_summary - info - Database initialization complete
+2025-04-02T11:44:45.035Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T11:44:46.837Z - youtube_summary - info - Database setup completed
+2025-04-02T11:44:46.839Z - youtube_summary - info - Database initialization complete
+2025-04-02T11:45:00.470Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T11:45:02.196Z - youtube_summary - info - Database setup completed
+2025-04-02T11:45:02.197Z - youtube_summary - info - Database initialization complete
+2025-04-02T11:45:41.888Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T11:45:44.304Z - youtube_summary - info - Database setup completed
+2025-04-02T11:45:44.307Z - youtube_summary - info - Database initialization complete
+2025-04-02T12:09:00.763Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: undefined
+2025-04-02T12:09:00.764Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:09:00.766Z - youtube_summary - info - Generated task ID: a428bd01-9e45-4960-b597-a3a75daa6997
+2025-04-02T12:09:00.766Z - youtube_summary - info - Registering task in database
+2025-04-02T12:09:01.883Z - youtube_summary - info - Starting background processing for task a428bd01-9e45-4960-b597-a3a75daa6997
+2025-04-02T12:09:01.987Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID a428bd01-9e45-4960-b597-a3a75daa6997
+2025-04-02T12:09:01.988Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:09:03.669Z - youtube_summary - info - Response data type: object
+2025-04-02T12:09:03.670Z - youtube_summary - error - Error during transcript extraction: logger.warning is not a function
+2025-04-02T12:09:03.670Z - youtube_summary - info - Updating task a428bd01-9e45-4960-b597-a3a75daa6997 as completed
+2025-04-02T12:09:03.775Z - youtube_summary - info - Task a428bd01-9e45-4960-b597-a3a75daa6997 completed successfully
+2025-04-02T12:09:38.049Z - youtube_summary - error - SyntaxError: Expected ',' or '}' after property value in JSON at position 69
+    at JSON.parse (<anonymous>)
+    at parse (/home/tsago/projects/note-taker/node_modules/body-parser/lib/types/json.js:92:19)
+    at /home/tsago/projects/note-taker/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:238:16)
+    at done (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:514:28)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1589:12)
+2025-04-02T12:09:41.432Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: RU
+2025-04-02T12:09:41.432Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:09:41.432Z - youtube_summary - info - Generated task ID: 78962ddf-d6a8-4ace-8629-799bdc5924b7
+2025-04-02T12:09:41.433Z - youtube_summary - info - Registering task in database
+2025-04-02T12:09:42.474Z - youtube_summary - info - Starting background processing for task 78962ddf-d6a8-4ace-8629-799bdc5924b7
+2025-04-02T12:09:42.636Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 78962ddf-d6a8-4ace-8629-799bdc5924b7
+2025-04-02T12:09:42.637Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:09:43.973Z - youtube_summary - info - Response data type: object
+2025-04-02T12:09:43.974Z - youtube_summary - error - Error during transcript extraction: logger.warning is not a function
+2025-04-02T12:09:43.974Z - youtube_summary - info - Updating task 78962ddf-d6a8-4ace-8629-799bdc5924b7 as completed
+2025-04-02T12:09:44.092Z - youtube_summary - info - Task 78962ddf-d6a8-4ace-8629-799bdc5924b7 completed successfully
+2025-04-02T12:10:08.241Z - youtube_summary - info - Fetching status for task 78962ddf-d6a8-4ace-8629-799bdc5924b7
+2025-04-02T12:10:09.261Z - youtube_summary - info - Task 78962ddf-d6a8-4ace-8629-799bdc5924b7 status: completed
+2025-04-02T12:10:09.262Z - youtube_summary - info - Returning completed task data for 78962ddf-d6a8-4ace-8629-799bdc5924b7
+2025-04-02T12:11:53.331Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: Russia
+2025-04-02T12:11:53.332Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:11:53.332Z - youtube_summary - info - Generated task ID: 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:11:53.332Z - youtube_summary - info - Registering task in database
+2025-04-02T12:11:54.529Z - youtube_summary - info - Starting background processing for task 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:11:54.734Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:11:54.734Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:11:55.966Z - youtube_summary - info - Response data type: array
+2025-04-02T12:11:55.966Z - youtube_summary - info - Successfully extracted transcript of length 2472
+2025-04-02T12:11:57.838Z - youtube_summary - error - Error generating summary: 400 you must provide a model parameter
+2025-04-02T12:11:57.838Z - youtube_summary - info - Generated summary with emoji ❓
+2025-04-02T12:11:57.838Z - youtube_summary - info - Updating task 45a8a1f8-38a4-4b52-b795-189955774cf2 as completed
+2025-04-02T12:11:57.958Z - youtube_summary - info - Task 45a8a1f8-38a4-4b52-b795-189955774cf2 completed successfully
+2025-04-02T12:12:09.981Z - youtube_summary - info - Fetching status for task 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:12:11.121Z - youtube_summary - info - Task 45a8a1f8-38a4-4b52-b795-189955774cf2 status: completed
+2025-04-02T12:12:11.122Z - youtube_summary - info - Returning completed task data for 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:13:56.637Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T12:13:58.241Z - youtube_summary - info - Database setup completed
+2025-04-02T12:13:58.243Z - youtube_summary - info - Database initialization complete
+2025-04-02T12:14:00.596Z - youtube_summary - info - Fetching status for task 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:14:01.418Z - youtube_summary - info - Task 45a8a1f8-38a4-4b52-b795-189955774cf2 status: completed
+2025-04-02T12:14:01.418Z - youtube_summary - info - Returning completed task data for 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:14:02.677Z - youtube_summary - info - Fetching status for task 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:14:02.850Z - youtube_summary - info - Task 45a8a1f8-38a4-4b52-b795-189955774cf2 status: completed
+2025-04-02T12:14:02.850Z - youtube_summary - info - Returning completed task data for 45a8a1f8-38a4-4b52-b795-189955774cf2
+2025-04-02T12:14:08.162Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: Russia
+2025-04-02T12:14:08.163Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:14:08.164Z - youtube_summary - info - Generated task ID: 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd
+2025-04-02T12:14:08.164Z - youtube_summary - info - Registering task in database
+2025-04-02T12:14:08.269Z - youtube_summary - info - Starting background processing for task 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd
+2025-04-02T12:14:08.427Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd
+2025-04-02T12:14:08.427Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:14:09.894Z - youtube_summary - info - Response data type: object
+2025-04-02T12:14:09.895Z - youtube_summary - error - Error during transcript extraction: logger.warning is not a function
+2025-04-02T12:14:09.895Z - youtube_summary - info - Updating task 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd as completed
+2025-04-02T12:14:10.003Z - youtube_summary - info - Task 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd completed successfully
+2025-04-02T12:14:19.288Z - youtube_summary - info - Fetching status for task 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd
+2025-04-02T12:14:19.441Z - youtube_summary - info - Task 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd status: completed
+2025-04-02T12:14:19.441Z - youtube_summary - info - Returning completed task data for 4ebd0f0b-53ca-46ca-ad20-1846ef9f51bd
+2025-04-02T12:14:34.539Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: ru
+2025-04-02T12:14:34.539Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:14:34.539Z - youtube_summary - info - Generated task ID: ccde2f9c-9625-4d27-b487-8688b2f5c6aa
+2025-04-02T12:14:34.540Z - youtube_summary - info - Registering task in database
+2025-04-02T12:14:35.723Z - youtube_summary - info - Starting background processing for task ccde2f9c-9625-4d27-b487-8688b2f5c6aa
+2025-04-02T12:14:35.905Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID ccde2f9c-9625-4d27-b487-8688b2f5c6aa
+2025-04-02T12:14:35.905Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:14:36.955Z - youtube_summary - info - Response data type: object
+2025-04-02T12:14:36.956Z - youtube_summary - error - Error during transcript extraction: logger.warning is not a function
+2025-04-02T12:14:36.956Z - youtube_summary - info - Updating task ccde2f9c-9625-4d27-b487-8688b2f5c6aa as completed
+2025-04-02T12:14:37.069Z - youtube_summary - info - Task ccde2f9c-9625-4d27-b487-8688b2f5c6aa completed successfully
+2025-04-02T12:14:46.874Z - youtube_summary - info - Fetching status for task ccde2f9c-9625-4d27-b487-8688b2f5c6aa
+2025-04-02T12:14:47.090Z - youtube_summary - info - Task ccde2f9c-9625-4d27-b487-8688b2f5c6aa status: completed
+2025-04-02T12:14:47.090Z - youtube_summary - info - Returning completed task data for ccde2f9c-9625-4d27-b487-8688b2f5c6aa
+2025-04-02T12:14:57.607Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:14:57.607Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:14:57.608Z - youtube_summary - info - Generated task ID: ee37be76-7733-48a7-9a0f-dc13b900cc0c
+2025-04-02T12:14:57.608Z - youtube_summary - info - Registering task in database
+2025-04-02T12:14:58.610Z - youtube_summary - info - Starting background processing for task ee37be76-7733-48a7-9a0f-dc13b900cc0c
+2025-04-02T12:14:58.765Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID ee37be76-7733-48a7-9a0f-dc13b900cc0c
+2025-04-02T12:14:58.765Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:14:59.793Z - youtube_summary - info - Response data type: object
+2025-04-02T12:14:59.794Z - youtube_summary - error - Error during transcript extraction: logger.warning is not a function
+2025-04-02T12:14:59.794Z - youtube_summary - info - Updating task ee37be76-7733-48a7-9a0f-dc13b900cc0c as completed
+2025-04-02T12:14:59.994Z - youtube_summary - info - Task ee37be76-7733-48a7-9a0f-dc13b900cc0c completed successfully
+2025-04-02T12:15:08.395Z - youtube_summary - info - Fetching status for task ee37be76-7733-48a7-9a0f-dc13b900cc0c
+2025-04-02T12:15:08.513Z - youtube_summary - info - Task ee37be76-7733-48a7-9a0f-dc13b900cc0c status: completed
+2025-04-02T12:15:08.514Z - youtube_summary - info - Returning completed task data for ee37be76-7733-48a7-9a0f-dc13b900cc0c
+2025-04-02T12:15:09.740Z - youtube_summary - info - Fetching status for task ee37be76-7733-48a7-9a0f-dc13b900cc0c
+2025-04-02T12:15:09.928Z - youtube_summary - info - Task ee37be76-7733-48a7-9a0f-dc13b900cc0c status: completed
+2025-04-02T12:15:09.929Z - youtube_summary - info - Returning completed task data for ee37be76-7733-48a7-9a0f-dc13b900cc0c
+2025-04-02T12:15:44.873Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T12:15:52.138Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T12:15:54.064Z - youtube_summary - info - Database setup completed
+2025-04-02T12:15:54.066Z - youtube_summary - info - Database initialization complete
+2025-04-02T12:16:00.656Z - youtube_summary - error - SyntaxError: Expected double-quoted property name in JSON at position 71
+    at JSON.parse (<anonymous>)
+    at parse (/home/tsago/projects/note-taker/node_modules/body-parser/lib/types/json.js:92:19)
+    at /home/tsago/projects/note-taker/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:238:16)
+    at done (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:514:28)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1589:12)
+2025-04-02T12:16:03.140Z - youtube_summary - error - SyntaxError: Expected double-quoted property name in JSON at position 71
+    at JSON.parse (<anonymous>)
+    at parse (/home/tsago/projects/note-taker/node_modules/body-parser/lib/types/json.js:92:19)
+    at /home/tsago/projects/note-taker/node_modules/body-parser/lib/read.js:128:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:206:9)
+    at invokeCallback (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:238:16)
+    at done (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:227:7)
+    at IncomingMessage.onEnd (/home/tsago/projects/note-taker/node_modules/raw-body/index.js:287:7)
+    at IncomingMessage.emit (node:events:514:28)
+    at IncomingMessage.emit (node:domain:488:12)
+    at endReadableNT (node:internal/streams/readable:1589:12)
+2025-04-02T12:16:25.196Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:16:25.197Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:16:25.197Z - youtube_summary - info - Generated task ID: 58302168-204e-4ce4-aef3-2af2a8e04ee3
+2025-04-02T12:16:25.198Z - youtube_summary - info - Registering task in database
+2025-04-02T12:16:25.872Z - youtube_summary - info - Starting background processing for task 58302168-204e-4ce4-aef3-2af2a8e04ee3
+2025-04-02T12:16:26.002Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 58302168-204e-4ce4-aef3-2af2a8e04ee3
+2025-04-02T12:16:26.002Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:16:27.346Z - youtube_summary - info - Response data type: array
+2025-04-02T12:16:27.347Z - youtube_summary - info - Successfully extracted transcript of length 2472
+2025-04-02T12:16:35.551Z - youtube_summary - info - Generated summary with emoji 🧵
+2025-04-02T12:16:35.552Z - youtube_summary - info - Updating task 58302168-204e-4ce4-aef3-2af2a8e04ee3 as completed
+2025-04-02T12:16:35.744Z - youtube_summary - info - Task 58302168-204e-4ce4-aef3-2af2a8e04ee3 completed successfully
+2025-04-02T12:16:35.874Z - youtube_summary - info - Fetching status for task 58302168-204e-4ce4-aef3-2af2a8e04ee3
+2025-04-02T12:16:36.055Z - youtube_summary - info - Task 58302168-204e-4ce4-aef3-2af2a8e04ee3 status: completed
+2025-04-02T12:16:36.055Z - youtube_summary - info - Returning completed task data for 58302168-204e-4ce4-aef3-2af2a8e04ee3
+2025-04-02T12:16:48.251Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: ru
+2025-04-02T12:16:48.252Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:16:48.252Z - youtube_summary - info - Generated task ID: 3809b178-90dc-45b7-bd5c-f5c964eeda99
+2025-04-02T12:16:48.252Z - youtube_summary - info - Registering task in database
+2025-04-02T12:16:49.158Z - youtube_summary - info - Starting background processing for task 3809b178-90dc-45b7-bd5c-f5c964eeda99
+2025-04-02T12:16:49.278Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 3809b178-90dc-45b7-bd5c-f5c964eeda99
+2025-04-02T12:16:49.279Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:16:50.289Z - youtube_summary - info - Response data type: object
+2025-04-02T12:16:50.290Z - youtube_summary - info - Updating task 3809b178-90dc-45b7-bd5c-f5c964eeda99 as completed
+2025-04-02T12:16:50.490Z - youtube_summary - info - Task 3809b178-90dc-45b7-bd5c-f5c964eeda99 completed successfully
+2025-04-02T12:16:59.318Z - youtube_summary - info - Fetching status for task 3809b178-90dc-45b7-bd5c-f5c964eeda99
+2025-04-02T12:16:59.504Z - youtube_summary - info - Task 3809b178-90dc-45b7-bd5c-f5c964eeda99 status: completed
+2025-04-02T12:16:59.504Z - youtube_summary - info - Returning completed task data for 3809b178-90dc-45b7-bd5c-f5c964eeda99
+2025-04-02T12:19:38.483Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:19:38.484Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:19:38.484Z - youtube_summary - info - Generated task ID: 0738c233-3a81-465d-a58c-0984b6afa07e
+2025-04-02T12:19:38.484Z - youtube_summary - info - Registering task in database
+2025-04-02T12:19:39.665Z - youtube_summary - info - Starting background processing for task 0738c233-3a81-465d-a58c-0984b6afa07e
+2025-04-02T12:19:39.782Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 0738c233-3a81-465d-a58c-0984b6afa07e
+2025-04-02T12:19:39.783Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:19:40.795Z - youtube_summary - info - Response data type: object
+2025-04-02T12:19:40.796Z - youtube_summary - info - Updating task 0738c233-3a81-465d-a58c-0984b6afa07e as completed
+2025-04-02T12:19:40.910Z - youtube_summary - info - Task 0738c233-3a81-465d-a58c-0984b6afa07e completed successfully
+2025-04-02T12:19:57.330Z - youtube_summary - info - Fetching status for task 0738c233-3a81-465d-a58c-0984b6afa07e
+2025-04-02T12:19:58.305Z - youtube_summary - info - Task 0738c233-3a81-465d-a58c-0984b6afa07e status: completed
+2025-04-02T12:19:58.306Z - youtube_summary - info - Returning completed task data for 0738c233-3a81-465d-a58c-0984b6afa07e
+2025-04-02T12:20:10.601Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:20:10.602Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:20:10.602Z - youtube_summary - info - Generated task ID: 45f75578-579c-4795-bd77-3dbf675ef7ae
+2025-04-02T12:20:10.602Z - youtube_summary - info - Registering task in database
+2025-04-02T12:20:11.514Z - youtube_summary - info - Starting background processing for task 45f75578-579c-4795-bd77-3dbf675ef7ae
+2025-04-02T12:20:11.718Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 45f75578-579c-4795-bd77-3dbf675ef7ae
+2025-04-02T12:20:11.718Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:20:12.949Z - youtube_summary - info - Response data type: object
+2025-04-02T12:20:12.950Z - youtube_summary - info - Updating task 45f75578-579c-4795-bd77-3dbf675ef7ae as completed
+2025-04-02T12:20:13.152Z - youtube_summary - info - Task 45f75578-579c-4795-bd77-3dbf675ef7ae completed successfully
+2025-04-02T12:20:23.819Z - youtube_summary - info - Fetching status for task 45f75578-579c-4795-bd77-3dbf675ef7ae
+2025-04-02T12:20:24.647Z - youtube_summary - info - Task 45f75578-579c-4795-bd77-3dbf675ef7ae status: completed
+2025-04-02T12:20:24.647Z - youtube_summary - info - Returning completed task data for 45f75578-579c-4795-bd77-3dbf675ef7ae
+2025-04-02T12:20:57.989Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:20:57.989Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:20:57.989Z - youtube_summary - info - Generated task ID: 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:20:57.989Z - youtube_summary - info - Registering task in database
+2025-04-02T12:20:59.145Z - youtube_summary - info - Starting background processing for task 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:20:59.348Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:20:59.348Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:21:00.587Z - youtube_summary - info - Response data type: object
+2025-04-02T12:21:00.588Z - youtube_summary - info - Updating task 12483649-aa9f-44dc-85be-be697c6b1285 as completed
+2025-04-02T12:21:00.771Z - youtube_summary - info - Task 12483649-aa9f-44dc-85be-be697c6b1285 completed successfully
+2025-04-02T12:21:09.255Z - youtube_summary - info - Fetching status for task 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:21:09.384Z - youtube_summary - info - Task 12483649-aa9f-44dc-85be-be697c6b1285 status: completed
+2025-04-02T12:21:09.384Z - youtube_summary - info - Returning completed task data for 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:21:10.414Z - youtube_summary - info - Fetching status for task 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:21:10.612Z - youtube_summary - info - Task 12483649-aa9f-44dc-85be-be697c6b1285 status: completed
+2025-04-02T12:21:10.613Z - youtube_summary - info - Returning completed task data for 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:21:11.548Z - youtube_summary - info - Fetching status for task 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:21:11.650Z - youtube_summary - info - Task 12483649-aa9f-44dc-85be-be697c6b1285 status: completed
+2025-04-02T12:21:11.650Z - youtube_summary - info - Returning completed task data for 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:22:15.543Z - youtube_summary - info - Fetching status for task 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:22:16.756Z - youtube_summary - info - Task 12483649-aa9f-44dc-85be-be697c6b1285 status: completed
+2025-04-02T12:22:16.756Z - youtube_summary - info - Returning completed task data for 12483649-aa9f-44dc-85be-be697c6b1285
+2025-04-02T12:22:25.396Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:22:25.396Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:22:25.396Z - youtube_summary - info - Generated task ID: 78077d62-6984-4f30-894f-b7cc65494064
+2025-04-02T12:22:25.396Z - youtube_summary - info - Registering task in database
+2025-04-02T12:22:25.523Z - youtube_summary - info - Starting background processing for task 78077d62-6984-4f30-894f-b7cc65494064
+2025-04-02T12:22:25.627Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 78077d62-6984-4f30-894f-b7cc65494064
+2025-04-02T12:22:25.628Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:22:26.699Z - youtube_summary - info - Response data type: object
+2025-04-02T12:22:26.700Z - youtube_summary - info - Updating task 78077d62-6984-4f30-894f-b7cc65494064 as completed
+2025-04-02T12:22:26.893Z - youtube_summary - info - Task 78077d62-6984-4f30-894f-b7cc65494064 completed successfully
+2025-04-02T12:22:37.674Z - youtube_summary - info - Fetching status for task 78077d62-6984-4f30-894f-b7cc65494064
+2025-04-02T12:22:38.579Z - youtube_summary - info - Task 78077d62-6984-4f30-894f-b7cc65494064 status: completed
+2025-04-02T12:22:38.579Z - youtube_summary - info - Returning completed task data for 78077d62-6984-4f30-894f-b7cc65494064
+2025-04-02T12:22:57.782Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T12:22:59.766Z - youtube_summary - info - Database setup completed
+2025-04-02T12:22:59.768Z - youtube_summary - info - Database initialization complete
+2025-04-02T12:24:10.660Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:24:10.661Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:24:10.663Z - youtube_summary - info - Generated task ID: 052e2ccc-e27f-414e-a2a9-e910f63d921d
+2025-04-02T12:24:10.663Z - youtube_summary - info - Registering task in database
+2025-04-02T12:24:11.674Z - youtube_summary - info - Starting background processing for task 052e2ccc-e27f-414e-a2a9-e910f63d921d
+2025-04-02T12:24:11.780Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 052e2ccc-e27f-414e-a2a9-e910f63d921d
+2025-04-02T12:24:11.781Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:24:13.200Z - youtube_summary - info - Response data type: array
+2025-04-02T12:24:13.201Z - youtube_summary - info - Successfully extracted transcript of length 2472
+2025-04-02T12:24:21.814Z - youtube_summary - info - Generated summary with emoji 🧵
+2025-04-02T12:24:21.814Z - youtube_summary - info - Updating task 052e2ccc-e27f-414e-a2a9-e910f63d921d as completed
+2025-04-02T12:24:22.726Z - youtube_summary - info - Task 052e2ccc-e27f-414e-a2a9-e910f63d921d completed successfully
+2025-04-02T12:24:47.043Z - youtube_summary - info - Fetching status for task 052e2ccc-e27f-414e-a2a9-e910f63d921d
+2025-04-02T12:24:48.021Z - youtube_summary - info - Task 052e2ccc-e27f-414e-a2a9-e910f63d921d status: completed
+2025-04-02T12:24:48.022Z - youtube_summary - info - Returning completed task data for 052e2ccc-e27f-414e-a2a9-e910f63d921d
+2025-04-02T12:25:00.737Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: english
+2025-04-02T12:25:00.738Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:25:00.738Z - youtube_summary - info - Generated task ID: 6fbc5674-5483-4d07-8a02-2884b64c61fd
+2025-04-02T12:25:00.739Z - youtube_summary - info - Registering task in database
+2025-04-02T12:25:01.728Z - youtube_summary - info - Starting background processing for task 6fbc5674-5483-4d07-8a02-2884b64c61fd
+2025-04-02T12:25:01.932Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 6fbc5674-5483-4d07-8a02-2884b64c61fd
+2025-04-02T12:25:01.932Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:25:02.897Z - youtube_summary - info - Response data type: object
+2025-04-02T12:25:02.898Z - youtube_summary - info - Updating task 6fbc5674-5483-4d07-8a02-2884b64c61fd as completed
+2025-04-02T12:25:03.059Z - youtube_summary - info - Task 6fbc5674-5483-4d07-8a02-2884b64c61fd completed successfully
+2025-04-02T12:27:34.004Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: el
+2025-04-02T12:27:34.004Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:27:34.004Z - youtube_summary - info - Generated task ID: 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:27:34.004Z - youtube_summary - info - Registering task in database
+2025-04-02T12:27:34.897Z - youtube_summary - info - Starting background processing for task 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:27:35.009Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:27:35.009Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:27:36.045Z - youtube_summary - info - Response data type: object
+2025-04-02T12:27:36.046Z - youtube_summary - info - Updating task 294513f8-b5d9-4f23-9964-beeaadf3b4d6 as completed
+2025-04-02T12:27:36.143Z - youtube_summary - info - Task 294513f8-b5d9-4f23-9964-beeaadf3b4d6 completed successfully
+2025-04-02T12:27:45.940Z - youtube_summary - info - Fetching status for task 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:27:46.068Z - youtube_summary - info - Task 294513f8-b5d9-4f23-9964-beeaadf3b4d6 status: completed
+2025-04-02T12:27:46.068Z - youtube_summary - info - Returning completed task data for 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:28:01.570Z - youtube_summary - info - Fetching status for task 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:28:02.777Z - youtube_summary - info - Task 294513f8-b5d9-4f23-9964-beeaadf3b4d6 status: completed
+2025-04-02T12:28:02.778Z - youtube_summary - info - Returning completed task data for 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:28:04.076Z - youtube_summary - info - Fetching status for task 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:28:04.209Z - youtube_summary - info - Task 294513f8-b5d9-4f23-9964-beeaadf3b4d6 status: completed
+2025-04-02T12:28:04.210Z - youtube_summary - info - Returning completed task data for 294513f8-b5d9-4f23-9964-beeaadf3b4d6
+2025-04-02T12:28:38.557Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: el
+2025-04-02T12:28:38.557Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:28:38.557Z - youtube_summary - info - Generated task ID: 1a78138d-6519-4d73-a48e-61fedd805026
+2025-04-02T12:28:38.557Z - youtube_summary - info - Registering task in database
+2025-04-02T12:28:39.355Z - youtube_summary - info - Starting background processing for task 1a78138d-6519-4d73-a48e-61fedd805026
+2025-04-02T12:28:39.538Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 1a78138d-6519-4d73-a48e-61fedd805026
+2025-04-02T12:28:39.538Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:28:40.736Z - youtube_summary - info - Response data type: object
+2025-04-02T12:28:40.736Z - youtube_summary - info - Updating task 1a78138d-6519-4d73-a48e-61fedd805026 as completed
+2025-04-02T12:28:40.853Z - youtube_summary - info - Task 1a78138d-6519-4d73-a48e-61fedd805026 completed successfully
+2025-04-02T12:29:51.631Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: de
+2025-04-02T12:29:51.631Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:29:51.632Z - youtube_summary - info - Generated task ID: 81765221-faf9-4d57-9039-5e0d841460c9
+2025-04-02T12:29:51.632Z - youtube_summary - info - Registering task in database
+2025-04-02T12:29:52.311Z - youtube_summary - info - Starting background processing for task 81765221-faf9-4d57-9039-5e0d841460c9
+2025-04-02T12:29:52.424Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 81765221-faf9-4d57-9039-5e0d841460c9
+2025-04-02T12:29:52.425Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:29:53.639Z - youtube_summary - info - Response data type: object
+2025-04-02T12:29:53.640Z - youtube_summary - info - Updating task 81765221-faf9-4d57-9039-5e0d841460c9 as completed
+2025-04-02T12:29:53.742Z - youtube_summary - info - Task 81765221-faf9-4d57-9039-5e0d841460c9 completed successfully
+2025-04-02T12:30:03.680Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=OkzVh29lmEU, model: undefined, language: en
+2025-04-02T12:30:03.680Z - youtube_summary - info - Extracted video ID: OkzVh29lmEU
+2025-04-02T12:30:03.680Z - youtube_summary - info - Generated task ID: 0375a4b7-958f-4542-a34b-2be5459c5fc7
+2025-04-02T12:30:03.680Z - youtube_summary - info - Registering task in database
+2025-04-02T12:30:03.803Z - youtube_summary - info - Starting background processing for task 0375a4b7-958f-4542-a34b-2be5459c5fc7
+2025-04-02T12:30:03.998Z - youtube_summary - info - Processing video OkzVh29lmEU with task ID 0375a4b7-958f-4542-a34b-2be5459c5fc7
+2025-04-02T12:30:03.998Z - youtube_summary - info - Requesting transcript for video OkzVh29lmEU
+2025-04-02T12:30:05.027Z - youtube_summary - info - Response data type: object
+2025-04-02T12:30:05.028Z - youtube_summary - info - Updating task 0375a4b7-958f-4542-a34b-2be5459c5fc7 as completed
+2025-04-02T12:30:05.137Z - youtube_summary - info - Task 0375a4b7-958f-4542-a34b-2be5459c5fc7 completed successfully
+2025-04-02T12:30:38.645Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T12:30:38.645Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:30:38.645Z - youtube_summary - info - Generated task ID: e2f63008-524b-4adc-a9ae-a130649b4011
+2025-04-02T12:30:38.646Z - youtube_summary - info - Registering task in database
+2025-04-02T12:30:39.760Z - youtube_summary - info - Starting background processing for task e2f63008-524b-4adc-a9ae-a130649b4011
+2025-04-02T12:30:39.864Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID e2f63008-524b-4adc-a9ae-a130649b4011
+2025-04-02T12:30:39.865Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:30:40.908Z - youtube_summary - info - Response data type: object
+2025-04-02T12:30:40.908Z - youtube_summary - info - Updating task e2f63008-524b-4adc-a9ae-a130649b4011 as completed
+2025-04-02T12:30:41.015Z - youtube_summary - info - Task e2f63008-524b-4adc-a9ae-a130649b4011 completed successfully
+2025-04-02T12:30:50.020Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T12:30:50.020Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:30:50.020Z - youtube_summary - info - Generated task ID: cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:30:50.021Z - youtube_summary - info - Registering task in database
+2025-04-02T12:30:50.205Z - youtube_summary - info - Starting background processing for task cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:30:50.409Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:30:50.410Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:30:51.577Z - youtube_summary - info - Response data type: object
+2025-04-02T12:30:51.578Z - youtube_summary - info - Updating task cbf5a1c6-6925-4036-9464-b2b5388a13c8 as completed
+2025-04-02T12:30:51.730Z - youtube_summary - info - Task cbf5a1c6-6925-4036-9464-b2b5388a13c8 completed successfully
+2025-04-02T12:31:08.532Z - youtube_summary - info - Fetching status for task cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:31:09.560Z - youtube_summary - info - Task cbf5a1c6-6925-4036-9464-b2b5388a13c8 status: completed
+2025-04-02T12:31:09.560Z - youtube_summary - info - Returning completed task data for cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:31:12.116Z - youtube_summary - info - Fetching status for task cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:31:12.251Z - youtube_summary - info - Task cbf5a1c6-6925-4036-9464-b2b5388a13c8 status: completed
+2025-04-02T12:31:12.251Z - youtube_summary - info - Returning completed task data for cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:31:16.006Z - youtube_summary - info - Fetching status for task cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:31:16.113Z - youtube_summary - info - Task cbf5a1c6-6925-4036-9464-b2b5388a13c8 status: completed
+2025-04-02T12:31:16.113Z - youtube_summary - info - Returning completed task data for cbf5a1c6-6925-4036-9464-b2b5388a13c8
+2025-04-02T12:31:26.397Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T12:31:26.398Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:31:26.398Z - youtube_summary - info - Generated task ID: 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d
+2025-04-02T12:31:26.398Z - youtube_summary - info - Registering task in database
+2025-04-02T12:31:27.232Z - youtube_summary - info - Starting background processing for task 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d
+2025-04-02T12:31:27.377Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d
+2025-04-02T12:31:27.377Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:31:28.508Z - youtube_summary - info - Response data type: array
+2025-04-02T12:31:28.508Z - youtube_summary - info - Successfully extracted transcript of length 3418
+2025-04-02T12:31:35.585Z - youtube_summary - info - Generated summary with emoji 🗣️
+2025-04-02T12:31:35.585Z - youtube_summary - info - Updating task 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d as completed
+2025-04-02T12:31:35.774Z - youtube_summary - info - Task 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d completed successfully
+2025-04-02T12:31:47.342Z - youtube_summary - info - Fetching status for task 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d
+2025-04-02T12:31:48.063Z - youtube_summary - info - Task 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d status: completed
+2025-04-02T12:31:48.063Z - youtube_summary - info - Returning completed task data for 2fbe6d47-b2f5-4f7d-b467-d7d9d38c220d
+2025-04-02T12:32:14.959Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: de
+2025-04-02T12:32:14.960Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:32:14.960Z - youtube_summary - info - Generated task ID: bd48a80c-d458-479a-91d4-251a6ac378ce
+2025-04-02T12:32:14.960Z - youtube_summary - info - Registering task in database
+2025-04-02T12:32:16.121Z - youtube_summary - info - Starting background processing for task bd48a80c-d458-479a-91d4-251a6ac378ce
+2025-04-02T12:32:16.325Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID bd48a80c-d458-479a-91d4-251a6ac378ce
+2025-04-02T12:32:16.325Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:32:17.557Z - youtube_summary - info - Response data type: object
+2025-04-02T12:32:17.557Z - youtube_summary - info - Updating task bd48a80c-d458-479a-91d4-251a6ac378ce as completed
+2025-04-02T12:32:17.744Z - youtube_summary - info - Task bd48a80c-d458-479a-91d4-251a6ac378ce completed successfully
+2025-04-02T12:32:23.722Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: de
+2025-04-02T12:32:23.722Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:32:23.722Z - youtube_summary - info - Generated task ID: 1db6fba1-6a7e-48dd-9ac7-11b7b71fd29c
+2025-04-02T12:32:23.722Z - youtube_summary - info - Registering task in database
+2025-04-02T12:32:23.903Z - youtube_summary - info - Starting background processing for task 1db6fba1-6a7e-48dd-9ac7-11b7b71fd29c
+2025-04-02T12:32:24.210Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 1db6fba1-6a7e-48dd-9ac7-11b7b71fd29c
+2025-04-02T12:32:24.211Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:32:25.233Z - youtube_summary - info - Response data type: object
+2025-04-02T12:32:25.233Z - youtube_summary - info - Updating task 1db6fba1-6a7e-48dd-9ac7-11b7b71fd29c as completed
+2025-04-02T12:32:25.343Z - youtube_summary - info - Task 1db6fba1-6a7e-48dd-9ac7-11b7b71fd29c completed successfully
+2025-04-02T12:32:28.040Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: de
+2025-04-02T12:32:28.040Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:32:28.040Z - youtube_summary - info - Generated task ID: 2d2b3bac-a325-47e9-901e-138af1bc87e8
+2025-04-02T12:32:28.040Z - youtube_summary - info - Registering task in database
+2025-04-02T12:32:28.204Z - youtube_summary - info - Starting background processing for task 2d2b3bac-a325-47e9-901e-138af1bc87e8
+2025-04-02T12:32:28.309Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 2d2b3bac-a325-47e9-901e-138af1bc87e8
+2025-04-02T12:32:28.310Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:32:29.025Z - youtube_summary - info - Response data type: object
+2025-04-02T12:32:29.026Z - youtube_summary - info - Updating task 2d2b3bac-a325-47e9-901e-138af1bc87e8 as completed
+2025-04-02T12:32:29.127Z - youtube_summary - info - Task 2d2b3bac-a325-47e9-901e-138af1bc87e8 completed successfully
+2025-04-02T12:33:31.233Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T12:33:33.333Z - youtube_summary - info - Database setup completed
+2025-04-02T12:33:33.335Z - youtube_summary - info - Database initialization complete
+2025-04-02T12:33:46.738Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T12:33:48.693Z - youtube_summary - info - Database setup completed
+2025-04-02T12:33:48.696Z - youtube_summary - info - Database initialization complete
+2025-04-02T12:33:51.306Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: de
+2025-04-02T12:33:51.307Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:33:51.307Z - youtube_summary - info - Generated task ID: 80f40cc4-8883-46f6-854a-c9eda28ecfe9
+2025-04-02T12:33:51.308Z - youtube_summary - info - Registering task in database
+2025-04-02T12:33:52.496Z - youtube_summary - info - Starting background processing for task 80f40cc4-8883-46f6-854a-c9eda28ecfe9
+2025-04-02T12:33:52.699Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 80f40cc4-8883-46f6-854a-c9eda28ecfe9
+2025-04-02T12:33:52.700Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:33:56.487Z - youtube_summary - info - Response data type: object
+2025-04-02T12:33:56.488Z - youtube_summary - info - Updating task 80f40cc4-8883-46f6-854a-c9eda28ecfe9 as completed
+2025-04-02T12:33:56.699Z - youtube_summary - info - Task 80f40cc4-8883-46f6-854a-c9eda28ecfe9 completed successfully
+2025-04-02T12:34:05.483Z - youtube_summary - info - Fetching status for task 80f40cc4-8883-46f6-854a-c9eda28ecfe9
+2025-04-02T12:34:05.597Z - youtube_summary - info - Task 80f40cc4-8883-46f6-854a-c9eda28ecfe9 status: completed
+2025-04-02T12:34:05.597Z - youtube_summary - info - Returning completed task data for 80f40cc4-8883-46f6-854a-c9eda28ecfe9
+2025-04-02T12:34:14.254Z - youtube_summary - info - Fetching status for task 80f40cc4-8883-46f6-854a-c9eda28ecfe9
+2025-04-02T12:34:14.397Z - youtube_summary - info - Task 80f40cc4-8883-46f6-854a-c9eda28ecfe9 status: completed
+2025-04-02T12:34:14.397Z - youtube_summary - info - Returning completed task data for 80f40cc4-8883-46f6-854a-c9eda28ecfe9
+2025-04-02T12:34:33.259Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T12:34:35.237Z - youtube_summary - info - Database setup completed
+2025-04-02T12:34:35.239Z - youtube_summary - info - Database initialization complete
+2025-04-02T12:34:36.933Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: de
+2025-04-02T12:34:36.934Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:34:36.935Z - youtube_summary - info - Generated task ID: 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:34:36.935Z - youtube_summary - info - Registering task in database
+2025-04-02T12:34:37.897Z - youtube_summary - info - Starting background processing for task 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:34:38.030Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:34:38.031Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:34:39.106Z - youtube_summary - info - Response data type: object
+2025-04-02T12:34:39.107Z - youtube_summary - info - Updating task 1cbd5da5-6ac8-476f-b57d-55f34ba47688 as completed
+2025-04-02T12:34:39.202Z - youtube_summary - info - Task 1cbd5da5-6ac8-476f-b57d-55f34ba47688 completed successfully
+2025-04-02T12:34:49.285Z - youtube_summary - info - Fetching status for task 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:34:50.165Z - youtube_summary - info - Task 1cbd5da5-6ac8-476f-b57d-55f34ba47688 status: failed
+2025-04-02T12:34:50.166Z - youtube_summary - info - Returning failed task data for 1cbd5da5-6ac8-476f-b57d-55f34ba47688: null
+2025-04-02T12:34:56.417Z - youtube_summary - info - Fetching status for task 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:34:56.587Z - youtube_summary - info - Task 1cbd5da5-6ac8-476f-b57d-55f34ba47688 status: failed
+2025-04-02T12:34:56.587Z - youtube_summary - info - Returning failed task data for 1cbd5da5-6ac8-476f-b57d-55f34ba47688: null
+2025-04-02T12:35:02.671Z - youtube_summary - info - Fetching status for task 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:35:02.898Z - youtube_summary - info - Task 1cbd5da5-6ac8-476f-b57d-55f34ba47688 status: failed
+2025-04-02T12:35:02.899Z - youtube_summary - info - Returning failed task data for 1cbd5da5-6ac8-476f-b57d-55f34ba47688: null
+2025-04-02T12:35:45.834Z - youtube_summary - info - Fetching status for task 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:35:46.873Z - youtube_summary - info - Task 1cbd5da5-6ac8-476f-b57d-55f34ba47688 status: failed
+2025-04-02T12:35:46.873Z - youtube_summary - info - Returning failed task data for 1cbd5da5-6ac8-476f-b57d-55f34ba47688: null
+2025-04-02T12:35:48.172Z - youtube_summary - info - Fetching status for task 1cbd5da5-6ac8-476f-b57d-55f34ba47688
+2025-04-02T12:35:48.298Z - youtube_summary - info - Task 1cbd5da5-6ac8-476f-b57d-55f34ba47688 status: failed
+2025-04-02T12:35:48.299Z - youtube_summary - info - Returning failed task data for 1cbd5da5-6ac8-476f-b57d-55f34ba47688: null
+2025-04-02T12:36:00.070Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T12:36:00.071Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:36:00.071Z - youtube_summary - info - Generated task ID: 02efd167-9f72-4555-8452-668925425e0e
+2025-04-02T12:36:00.071Z - youtube_summary - info - Registering task in database
+2025-04-02T12:36:00.943Z - youtube_summary - info - Starting background processing for task 02efd167-9f72-4555-8452-668925425e0e
+2025-04-02T12:36:01.166Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 02efd167-9f72-4555-8452-668925425e0e
+2025-04-02T12:36:01.166Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:36:02.288Z - youtube_summary - info - Response data type: object
+2025-04-02T12:36:02.289Z - youtube_summary - info - Updating task 02efd167-9f72-4555-8452-668925425e0e as completed
+2025-04-02T12:36:02.388Z - youtube_summary - info - Task 02efd167-9f72-4555-8452-668925425e0e completed successfully
+2025-04-02T12:36:13.843Z - youtube_summary - info - Fetching status for task 02efd167-9f72-4555-8452-668925425e0e
+2025-04-02T12:36:14.719Z - youtube_summary - info - Task 02efd167-9f72-4555-8452-668925425e0e status: failed
+2025-04-02T12:36:14.719Z - youtube_summary - info - Returning failed task data for 02efd167-9f72-4555-8452-668925425e0e: null
+2025-04-02T12:36:16.004Z - youtube_summary - info - Fetching status for task 02efd167-9f72-4555-8452-668925425e0e
+2025-04-02T12:36:16.153Z - youtube_summary - info - Task 02efd167-9f72-4555-8452-668925425e0e status: failed
+2025-04-02T12:36:16.153Z - youtube_summary - info - Returning failed task data for 02efd167-9f72-4555-8452-668925425e0e: null
+2025-04-02T12:36:21.013Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T12:36:21.013Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:36:21.013Z - youtube_summary - info - Generated task ID: a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7
+2025-04-02T12:36:21.014Z - youtube_summary - info - Registering task in database
+2025-04-02T12:36:21.170Z - youtube_summary - info - Starting background processing for task a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7
+2025-04-02T12:36:21.329Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7
+2025-04-02T12:36:21.330Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:36:22.505Z - youtube_summary - info - Response data type: object
+2025-04-02T12:36:22.506Z - youtube_summary - info - Updating task a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7 as completed
+2025-04-02T12:36:22.691Z - youtube_summary - info - Task a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7 completed successfully
+2025-04-02T12:36:34.570Z - youtube_summary - info - Fetching status for task a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7
+2025-04-02T12:36:35.505Z - youtube_summary - info - Task a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7 status: failed
+2025-04-02T12:36:35.506Z - youtube_summary - info - Returning failed task data for a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7: null
+2025-04-02T12:36:36.719Z - youtube_summary - info - Fetching status for task a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7
+2025-04-02T12:36:36.818Z - youtube_summary - info - Task a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7 status: failed
+2025-04-02T12:36:36.819Z - youtube_summary - info - Returning failed task data for a2395903-f5ab-4b5d-99d1-7ab4ddd2d6f7: null
+2025-04-02T12:36:48.459Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T12:36:48.459Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:36:48.459Z - youtube_summary - info - Generated task ID: 13f1321f-5d94-45bb-b824-492ec42a72c6
+2025-04-02T12:36:48.459Z - youtube_summary - info - Registering task in database
+2025-04-02T12:36:49.330Z - youtube_summary - info - Starting background processing for task 13f1321f-5d94-45bb-b824-492ec42a72c6
+2025-04-02T12:36:49.534Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 13f1321f-5d94-45bb-b824-492ec42a72c6
+2025-04-02T12:36:49.534Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:36:50.560Z - youtube_summary - info - Response data type: object
+2025-04-02T12:36:50.560Z - youtube_summary - info - Updating task 13f1321f-5d94-45bb-b824-492ec42a72c6 as completed
+2025-04-02T12:36:50.714Z - youtube_summary - info - Task 13f1321f-5d94-45bb-b824-492ec42a72c6 completed successfully
+2025-04-02T12:37:00.505Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T12:37:00.505Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T12:37:00.506Z - youtube_summary - info - Generated task ID: 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T12:37:00.506Z - youtube_summary - info - Registering task in database
+2025-04-02T12:37:00.697Z - youtube_summary - info - Starting background processing for task 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T12:37:00.813Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T12:37:00.813Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T12:37:02.133Z - youtube_summary - info - Response data type: array
+2025-04-02T12:37:02.133Z - youtube_summary - info - Successfully extracted transcript of length 3418
+2025-04-02T12:37:10.019Z - youtube_summary - info - Generated summary with emoji 🗣️
+2025-04-02T12:37:10.020Z - youtube_summary - info - Updating task 31119eef-6cce-4dbb-81e7-55bdae67c59b as completed
+2025-04-02T12:37:10.151Z - youtube_summary - info - Task 31119eef-6cce-4dbb-81e7-55bdae67c59b completed successfully
+2025-04-02T12:37:20.947Z - youtube_summary - info - Fetching status for task 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T12:37:21.894Z - youtube_summary - info - Task 31119eef-6cce-4dbb-81e7-55bdae67c59b status: completed
+2025-04-02T12:37:21.895Z - youtube_summary - info - Returning completed task data for 31119eef-6cce-4dbb-81e7-55bdae67c59b

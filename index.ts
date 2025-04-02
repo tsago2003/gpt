@@ -496,7 +496,7 @@ SUMMARY:
 The transcript is: ${transcriptText}`;
 
     const response = await openaiClient.chat.completions.create({
-      model: "gpt-4",
+      model: "gpt-4o-mini",
       messages: [
         {
           role: "system",
@@ -576,7 +576,7 @@ async function processVideo(
     let transcriptText = "Failed to extract transcript.";
     let emoji = "📝";
     let summary = `Failed to generate summary for video ${videoId}.`;
-
+    let status = "failed";
     // Try to extract transcript using RapidAPI
     try {
       logger.info(`Requesting transcript for video ${videoId}`);
@@ -584,7 +584,7 @@ async function processVideo(
         await rapidApiClient.get("", {
           params: {
             video_id: videoId,
-            lang: "en",
+            lang: summaryLanguage,
           },
         });
 
@@ -612,7 +612,7 @@ async function processVideo(
               title = data.title;
             }
           } else {
-            logger.warning(
+            console.warn(
               `No transcriptionAsText found in response: ${Object.keys(data)}`
             );
 
@@ -641,7 +641,7 @@ async function processVideo(
           summary = summaryResult.summary;
           logger.info(`Generated summary with emoji ${emoji}`);
         } else {
-          logger.warning("No transcript extracted, cannot generate summary");
+          console.warn("No transcript extracted, cannot generate summary");
         }
       } else {
         logger.error(
@@ -654,12 +654,18 @@ async function processVideo(
 
     // Store results in the database
     logger.info(`Updating task ${taskId} as completed`);
-    await updateTaskStatus(taskId, "completed", {
-      transcript: transcriptText,
-      title,
-      summary,
-      emoji,
-    });
+    await updateTaskStatus(
+      taskId,
+      transcriptText == "Failed to extract transcript."
+        ? "failed"
+        : "completed",
+      {
+        transcript: transcriptText,
+        title,
+        summary,
+        emoji,
+      }
+    );
     logger.info(`Task ${taskId} completed successfully`);
   } catch (error: any) {
     const errorMsg = error.message;
@@ -810,7 +816,6 @@ async function processChat(
       ...chatHistory,
     ];
 
-  // Send the combined data to GPT
   try {
     const response = await openaiClient.chat.completions.create({
       model: "gpt-4o-mini",
@@ -950,7 +955,7 @@ app.post(
       );
       return res.json({ task_id });
     } catch (err) {
-      throw err;
+      return res.status(400).json(err);
     }
   }
 );
@@ -996,7 +1001,7 @@ app.post(
       // Start processing in the background
       logger.info(`Starting background processing for task ${task_id}`);
       BackgroundTasks.add(() =>
-        processVideo(video_id, task_id, model, summaryLanguage)
+        processVideo(video_id, task_id, "gpt-4o-mini", summaryLanguage)
       );
 
       return res.json({ task_id });
