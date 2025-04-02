@@ -22,23 +22,24 @@ export function authenticateToken(
   next: NextFunction
 ): void {
   next();
-  const authHeader = req.headers.authorization;
-  if (!authHeader || !authHeader.startsWith("Bearer ")) {
-    res.status(401).json({ message: "No token provided" });
-    return; // ✅ Ensure we return here
-  }
+  return;
+  //   const authHeader = req.headers.authorization;
+  //   if (!authHeader || !authHeader.startsWith("Bearer ")) {
+  //     res.status(401).json({ message: "No token provided" });
+  //     return; // ✅ Ensure we return here
+  //   }
 
-  const token = authHeader.split("Bearer ")[1];
+  //   const token = authHeader.split("Bearer ")[1];
 
-  admin
-    .auth()
-    .verifyIdToken(token)
-    .then((decodedToken) => {
-      req.user = decodedToken;
-      next(); // ✅ Move to next middleware only on success
-    })
-    .catch(() => {
-      res.status(403).json({ message: "Invalid or expired token" });
-      return; // ✅ Ensure function exits after response
-    });
+  //   admin
+  //     .auth()
+  //     .verifyIdToken(token)
+  //     .then((decodedToken) => {
+  //       req.user = decodedToken;
+  //       next(); // ✅ Move to next middleware only on success
+  //     })
+  //     .catch(() => {
+  //       res.status(403).json({ message: "Invalid or expired token" });
+  //       return; // ✅ Ensure function exits after response
+  //     });
 }

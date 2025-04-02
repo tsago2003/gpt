@@ -1039,3 +1039,41 @@
 2025-04-02T20:55:24.978Z - youtube_summary - info - OpenAI client initialized successfully
 2025-04-02T20:55:27.079Z - youtube_summary - info - Database setup completed
 2025-04-02T20:55:27.082Z - youtube_summary - info - Database initialization complete
+2025-04-02T20:56:59.759Z - youtube_summary - info - Fetching status for task c8106228-e1f6-4e65-8d9e-33185c8bf51f
+2025-04-02T20:57:00.826Z - youtube_summary - info - Task c8106228-e1f6-4e65-8d9e-33185c8bf51f status: completed
+2025-04-02T20:57:00.826Z - youtube_summary - info - Returning completed task data for c8106228-e1f6-4e65-8d9e-33185c8bf51f
+2025-04-02T20:57:18.729Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-02T20:57:18.730Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-02T20:57:18.731Z - youtube_summary - info - Generated task ID: 00220ae1-6fe1-4e50-a600-d9054319e9be
+2025-04-02T20:57:18.732Z - youtube_summary - info - Registering task in database
+2025-04-02T20:57:19.301Z - youtube_summary - info - Starting background processing for task 00220ae1-6fe1-4e50-a600-d9054319e9be
+2025-04-02T20:58:01.697Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T20:58:02.227Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-02T20:58:02.228Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-02T20:58:02.231Z - youtube_summary - info - Generated task ID: 33996934-aac9-4ceb-b525-8a8036077349
+2025-04-02T20:58:02.231Z - youtube_summary - info - Registering task in database
+2025-04-02T20:58:03.168Z - youtube_summary - info - Starting background processing for task 33996934-aac9-4ceb-b525-8a8036077349
+2025-04-02T20:58:03.334Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID 33996934-aac9-4ceb-b525-8a8036077349
+2025-04-02T20:58:03.335Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-02T20:58:03.697Z - youtube_summary - info - Database setup completed
+2025-04-02T20:58:03.700Z - youtube_summary - info - Database initialization complete
+2025-04-02T20:58:04.430Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-02T20:58:04.430Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-02T20:58:04.431Z - youtube_summary - info - Generated task ID: c5bfd79e-aa44-46e6-82b6-eecaca063163
+2025-04-02T20:58:04.431Z - youtube_summary - info - Registering task in database
+2025-04-02T20:58:04.530Z - youtube_summary - info - Starting background processing for task c5bfd79e-aa44-46e6-82b6-eecaca063163
+2025-04-02T20:58:04.626Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID c5bfd79e-aa44-46e6-82b6-eecaca063163
+2025-04-02T20:58:04.626Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-02T20:58:05.373Z - youtube_summary - info - Response data type: array
+2025-04-02T20:58:05.373Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-02T20:58:05.425Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-02T20:58:05.425Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-02T20:58:05.425Z - youtube_summary - info - Generated task ID: 89ba61c7-7153-47f5-bf60-68c56081e84c
+2025-04-02T20:58:05.425Z - youtube_summary - info - Registering task in database
+2025-04-02T20:58:05.520Z - youtube_summary - info - Starting background processing for task 89ba61c7-7153-47f5-bf60-68c56081e84c
+2025-04-02T20:58:05.616Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID 89ba61c7-7153-47f5-bf60-68c56081e84c
+2025-04-02T20:58:05.617Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-02T20:58:05.626Z - youtube_summary - info - Response data type: array
+2025-04-02T20:58:05.627Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-02T20:58:06.716Z - youtube_summary - info - Response data type: array
+2025-04-02T20:58:06.716Z - youtube_summary - info - Successfully extracted transcript of length 881
