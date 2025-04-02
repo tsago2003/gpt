@@ -783,3 +783,30 @@
 2025-04-02T12:37:20.947Z - youtube_summary - info - Fetching status for task 31119eef-6cce-4dbb-81e7-55bdae67c59b
 2025-04-02T12:37:21.894Z - youtube_summary - info - Task 31119eef-6cce-4dbb-81e7-55bdae67c59b status: completed
 2025-04-02T12:37:21.895Z - youtube_summary - info - Returning completed task data for 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T19:55:54.622Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-02T19:55:56.631Z - youtube_summary - info - Database setup completed
+2025-04-02T19:55:56.633Z - youtube_summary - info - Database initialization complete
+2025-04-02T19:55:57.181Z - youtube_summary - info - Fetching status for task 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T19:55:57.906Z - youtube_summary - info - Task 31119eef-6cce-4dbb-81e7-55bdae67c59b status: completed
+2025-04-02T19:55:57.906Z - youtube_summary - info - Returning completed task data for 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T19:56:22.962Z - youtube_summary - info - Fetching status for task 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T19:56:23.755Z - youtube_summary - info - Task 31119eef-6cce-4dbb-81e7-55bdae67c59b status: completed
+2025-04-02T19:56:23.756Z - youtube_summary - info - Returning completed task data for 31119eef-6cce-4dbb-81e7-55bdae67c59b
+2025-04-02T19:57:05.258Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=xDdTKBphRMs, model: undefined, language: en
+2025-04-02T19:57:05.259Z - youtube_summary - info - Extracted video ID: xDdTKBphRMs
+2025-04-02T19:57:05.260Z - youtube_summary - info - Generated task ID: 2c02834f-73d3-4abb-9300-f4ee154ced32
+2025-04-02T19:57:05.261Z - youtube_summary - info - Registering task in database
+2025-04-02T19:57:06.044Z - youtube_summary - info - Starting background processing for task 2c02834f-73d3-4abb-9300-f4ee154ced32
+2025-04-02T19:57:06.248Z - youtube_summary - info - Processing video xDdTKBphRMs with task ID 2c02834f-73d3-4abb-9300-f4ee154ced32
+2025-04-02T19:57:06.249Z - youtube_summary - info - Requesting transcript for video xDdTKBphRMs
+2025-04-02T19:57:08.106Z - youtube_summary - info - Response data type: array
+2025-04-02T19:57:08.107Z - youtube_summary - info - Successfully extracted transcript of length 3418
+2025-04-02T19:57:15.585Z - youtube_summary - info - Generated summary with emoji 🎤
+2025-04-02T19:57:15.585Z - youtube_summary - info - Updating task 2c02834f-73d3-4abb-9300-f4ee154ced32 as completed
+2025-04-02T19:57:15.686Z - youtube_summary - info - Task 2c02834f-73d3-4abb-9300-f4ee154ced32 completed successfully
+2025-04-02T19:57:18.743Z - youtube_summary - info - Fetching status for task 2c02834f-73d3-4abb-9300-f4ee154ced32
+2025-04-02T19:57:18.979Z - youtube_summary - info - Task 2c02834f-73d3-4abb-9300-f4ee154ced32 status: completed
+2025-04-02T19:57:18.980Z - youtube_summary - info - Returning completed task data for 2c02834f-73d3-4abb-9300-f4ee154ced32
+2025-04-02T19:57:20.677Z - youtube_summary - info - Fetching status for task 2c02834f-73d3-4abb-9300-f4ee154ced32
+2025-04-02T19:57:20.778Z - youtube_summary - info - Task 2c02834f-73d3-4abb-9300-f4ee154ced32 status: completed
+2025-04-02T19:57:20.779Z - youtube_summary - info - Returning completed task data for 2c02834f-73d3-4abb-9300-f4ee154ced32
