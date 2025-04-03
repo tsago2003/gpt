@@ -17,6 +17,7 @@ import { FsReadStream } from "openai/_shims/auto/types";
 import { error } from "console";
 
 import { authenticateToken } from "./authmiddleware";
+import { getRemoteConfig } from "./authmiddleware";
 // --------------------------
 // Environment Configuration
 // --------------------------
@@ -57,25 +58,37 @@ const logger = createLogger({
 // Service Clients Initialization
 // --------------------------
 // OpenAI Client
+
 const openaiApiKey = process.env.OPENAI_API_KEY;
 let openaiClient: OpenAI | null = null;
 
-if (openaiApiKey) {
-  try {
-    openaiClient = new OpenAI({
-      apiKey: openaiApiKey,
-      timeout: 600000, // 600 seconds in ms
-      maxRetries: 1,
-    });
-    logger.info("OpenAI client initialized successfully");
-  } catch (e: any) {
-    logger.error(`Failed to initialize OpenAI client: ${e.message}`);
+getRemoteConfig().then((response) => {
+  const openaiApiKey = (response.openAiModel.defaultValue as any)?.value;
+  const userAgent = (response.userAgent.defaultValue as any)?.value;
+  if (openaiApiKey) {
+    try {
+      const clientConfig: any = {
+        apiKey: openaiApiKey,
+        timeout: 600000, // 600 seconds in ms
+        maxRetries: 1,
+      };
+
+      // Add User-Agent only if userAgent has a value
+      if (userAgent) {
+        clientConfig.defaultHeaders = { "User-Agent": userAgent };
+      }
+
+      openaiClient = new OpenAI(clientConfig);
+      logger.info("OpenAI client initialized successfully");
+    } catch (e: any) {
+      logger.error(`Failed to initialize OpenAI client: ${e.message}`);
+    }
+  } else {
+    console.warn(
+      "OPENAI_API_KEY not found. Summary generation will use fallback method."
+    );
   }
-} else {
-  console.warn(
-    "OPENAI_API_KEY not found. Summary generation will use fallback method."
-  );
-}
+});
 
 // Database Configuration
 const dbConfig: PoolConfig = {
@@ -497,8 +510,11 @@ the transcript must be translated to ${summaryLanguage}
 
 The transcript is: ${transcriptText}`;
 
+    const data = await getRemoteConfig();
+    const model = (data.openAiModel.defaultValue as any)?.value;
+
     const response = await openaiClient.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: model,
       messages: [
         {
           role: "system",
@@ -507,7 +523,7 @@ The transcript is: ${transcriptText}`;
         },
         { role: "user", content: prompt },
       ],
-      max_tokens: 1000,
+      max_tokens: 150,
       temperature: 0.5,
     });
 
@@ -819,8 +835,10 @@ async function processChat(
     ];
 
   try {
+    const data = await getRemoteConfig();
+    const model = (data.openAiModel.defaultValue as any)?.value;
     const response = await openaiClient.chat.completions.create({
-      model: "gpt-4o-mini",
+      model: model,
       messages: [
         { role: "system", content: systemPrompt },
         {
@@ -944,11 +962,13 @@ app.post(
       const sound_id = soundUrlMatch[1];
       const task_id = uuidv4();
 
+      const data = await getRemoteConfig();
+      const model = (data.openAiModel.defaultValue as any)?.value;
       await insertTask(
         task_id,
         sound_id,
         audio_link,
-        "gpt-4o-mini",
+        model,
         outputLanguageCode
       );
 
