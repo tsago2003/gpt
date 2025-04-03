@@ -365,6 +365,21 @@ async function getDbConnection(): Promise<any> {
   return await dbPool.connect();
 }
 
+app.get(
+  "/tasks/:taskId",
+  authenticateToken,
+  async (req: Request, res: Response): Promise<any> => {
+    try {
+      const task = await getTask(req.params.taskId);
+      if (!task) {
+        return res.status(404).json({ error: "Task not found" });
+      }
+      res.json(task);
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
+    }
+  }
+);
 // --------------------------
 // Task Operations
 // --------------------------
@@ -728,6 +743,7 @@ app.post(
 
 app.get(
   "/task_status/:task_id",
+  authenticateToken,
   async (
     req: Request<{ task_id: string }>,
     res: Response<TaskStatusResponse | { error: string }>
@@ -962,22 +978,6 @@ app.post(
       return res.json({ task_id });
     } catch (err) {
       return res.status(400).json(err);
-    }
-  }
-);
-
-app.get(
-  "/tasks/:taskId",
-  authenticateToken,
-  async (req: Request, res: Response): Promise<any> => {
-    try {
-      const task = await getTask(req.params.taskId);
-      if (!task) {
-        return res.status(404).json({ error: "Task not found" });
-      }
-      res.json(task);
-    } catch (error: any) {
-      res.status(500).json({ error: error.message });
     }
   }
 );
