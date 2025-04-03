@@ -495,7 +495,8 @@ interface SummaryResult {
 
 async function generateSummary(
   transcriptText: string,
-  summaryLanguage: string
+  summaryLanguage: string,
+  sound: string
 ): Promise<SummaryResult> {
   // Check if OpenAI client is available
   if (!openaiClient) {
@@ -509,6 +510,22 @@ async function generateSummary(
   }
 
   try {
+    const prompt1 = `You are a voice sound summarizer. Complete the following two tasks:
+                    
+1. Summarize the entire sound transcript, providing the important points with proper sub-headings 
+   in a concise manner (within 500 words).
+
+2. Choose a single emoji that best represents the main theme or topic of the video.
+
+Format your response as follows:
+EMOJI: [single emoji here]
+
+SUMMARY:
+[your summary here with proper formatting to ${summaryLanguage} Language,  dont forget to write it in ${summaryLanguage} its the most important thing here.]
+
+the transcript must be translated to ${summaryLanguage}
+
+The transcript is: ${transcriptText}`;
     const prompt = `You are a YouTube video summarizer. Complete the following two tasks:
                     
 1. Summarize the entire video transcript, providing the important points with proper sub-headings 
@@ -534,10 +551,11 @@ The transcript is: ${transcriptText}`;
       messages: [
         {
           role: "system",
-          content:
-            "You are a helpful assistant that summarizes YouTube transcripts.",
+          content: `You are a helpful assistant that summarizes ${
+            sound == "video" ? "youtube" : "voice sound"
+          } transcripts.`,
         },
-        { role: "user", content: prompt },
+        { role: "user", content: sound == "video" ? prompt : prompt1 },
       ],
       max_tokens: 150,
       temperature: 0.5,
@@ -582,7 +600,8 @@ async function processVideo(
   videoId: string,
   taskId: string,
   modelChoice: string = "Gemini",
-  summaryLanguage: string = "Spanish"
+  summaryLanguage: string = "Spanish",
+  sound: string
 ): Promise<void> {
   try {
     // Update task status to processing
@@ -652,7 +671,8 @@ async function processVideo(
         if (transcriptText !== "Failed to extract transcript.") {
           const summaryResult = await generateSummary(
             transcriptText,
-            summaryLanguage
+            summaryLanguage,
+            sound
           );
           emoji = summaryResult.emoji;
           summary = summaryResult.summary;
@@ -730,7 +750,7 @@ app.post(
       // Start processing in the background
       logger.info(`Starting background processing for task ${task_id}`);
       BackgroundTasks.add(() =>
-        processVideo(video_id, task_id, model, summaryLanguage)
+        processVideo(video_id, task_id, model, summaryLanguage, "video")
       );
 
       return res.json({ task_id });
@@ -916,7 +936,11 @@ async function transcribeAudio(
     console.log("Transcription:", transcription.text); // Output the transcribed text
 
     if (transcription) {
-      const summaryResult = await generateSummary(transcription.text, language);
+      const summaryResult = await generateSummary(
+        transcription.text,
+        language,
+        "sound"
+      );
       let title = `Video ${audioId}`;
       let emoji = "📝";
       emoji = summaryResult.emoji;
@@ -1024,7 +1048,7 @@ app.post(
       // Start processing in the background
       logger.info(`Starting background processing for task ${task_id}`);
       BackgroundTasks.add(() =>
-        processVideo(video_id, task_id, "gpt-4o-mini", summaryLanguage)
+        processVideo(video_id, task_id, "gpt-4o-mini", summaryLanguage, "video")
       );
 
       return res.json({ task_id });

@@ -1455,3 +1455,28 @@
 2025-04-03T09:12:35.034Z - youtube_summary - info - OpenAI client initialized successfully
 2025-04-03T09:12:35.539Z - youtube_summary - info - Database setup completed
 2025-04-03T09:12:35.540Z - youtube_summary - info - Database initialization complete
+2025-04-03T09:13:21.404Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T09:13:22.067Z - youtube_summary - info - Database setup completed
+2025-04-03T09:13:22.069Z - youtube_summary - info - Database initialization complete
+2025-04-03T09:27:44.444Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T09:27:44.945Z - youtube_summary - info - Database setup completed
+2025-04-03T09:27:44.946Z - youtube_summary - info - Database initialization complete
+2025-04-03T09:28:56.098Z - youtube_summary - info - Task fdc25d64-5517-4af1-8fae-29cf68e2910e completed successfully
+2025-04-03T09:29:05.729Z - youtube_summary - info - Fetching status for task fdc25d64-5517-4af1-8fae-29cf68e2910e
+2025-04-03T09:29:05.858Z - youtube_summary - info - Task fdc25d64-5517-4af1-8fae-29cf68e2910e status: completed
+2025-04-03T09:29:05.860Z - youtube_summary - info - Returning completed task data for fdc25d64-5517-4af1-8fae-29cf68e2910e
+2025-04-03T09:29:17.708Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-03T09:29:17.708Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-03T09:29:17.708Z - youtube_summary - info - Generated task ID: 87e70062-0faa-4813-84a6-4fed08eb76d8
+2025-04-03T09:29:17.709Z - youtube_summary - info - Registering task in database
+2025-04-03T09:29:18.420Z - youtube_summary - info - Starting background processing for task 87e70062-0faa-4813-84a6-4fed08eb76d8
+2025-04-03T09:29:18.600Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID 87e70062-0faa-4813-84a6-4fed08eb76d8
+2025-04-03T09:29:18.601Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-03T09:29:20.166Z - youtube_summary - info - Response data type: array
+2025-04-03T09:29:20.166Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-03T09:29:23.969Z - youtube_summary - info - Generated summary with emoji 🌍
+2025-04-03T09:29:23.969Z - youtube_summary - info - Updating task 87e70062-0faa-4813-84a6-4fed08eb76d8 as completed
+2025-04-03T09:29:24.065Z - youtube_summary - info - Task 87e70062-0faa-4813-84a6-4fed08eb76d8 completed successfully
+2025-04-03T09:29:28.870Z - youtube_summary - info - Fetching status for task 87e70062-0faa-4813-84a6-4fed08eb76d8
+2025-04-03T09:29:28.970Z - youtube_summary - info - Task 87e70062-0faa-4813-84a6-4fed08eb76d8 status: completed
+2025-04-03T09:29:28.974Z - youtube_summary - info - Returning completed task data for 87e70062-0faa-4813-84a6-4fed08eb76d8
