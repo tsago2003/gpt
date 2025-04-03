@@ -63,10 +63,11 @@ const openaiApiKey = process.env.OPENAI_API_KEY;
 let openaiClient: OpenAI | null = null;
 
 getRemoteConfig().then((response) => {
-  const openaiApiKey = (response.openAiModel.defaultValue as any)?.value;
+  const openaiApiKey = (response.openAiApiKey.defaultValue as any)?.value;
   const userAgent = (response.userAgent.defaultValue as any)?.value;
   if (openaiApiKey) {
     try {
+      console.log(openaiApiKey, "apikey");
       const clientConfig: any = {
         apiKey: openaiApiKey,
         timeout: 600000, // 600 seconds in ms

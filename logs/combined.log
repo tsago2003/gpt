@@ -1436,3 +1436,22 @@
 2025-04-03T09:06:58.956Z - youtube_summary - info - OpenAI client initialized successfully
 2025-04-03T09:06:59.184Z - youtube_summary - info - Database setup completed
 2025-04-03T09:06:59.185Z - youtube_summary - info - Database initialization complete
+2025-04-03T09:10:20.165Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-03T09:10:20.166Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-03T09:10:20.167Z - youtube_summary - info - Generated task ID: d1a33491-779c-4ada-922d-228a4dccb0f7
+2025-04-03T09:10:20.168Z - youtube_summary - info - Registering task in database
+2025-04-03T09:10:20.784Z - youtube_summary - info - Starting background processing for task d1a33491-779c-4ada-922d-228a4dccb0f7
+2025-04-03T09:10:20.875Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID d1a33491-779c-4ada-922d-228a4dccb0f7
+2025-04-03T09:10:20.876Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-03T09:10:21.860Z - youtube_summary - info - Response data type: array
+2025-04-03T09:10:21.861Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-03T09:10:22.454Z - youtube_summary - error - Error generating summary: 401 Incorrect API key provided: gpt-4o-mini. You can find your API key at https://platform.openai.com/account/api-keys.
+2025-04-03T09:10:22.454Z - youtube_summary - info - Generated summary with emoji ❓
+2025-04-03T09:10:22.454Z - youtube_summary - info - Updating task d1a33491-779c-4ada-922d-228a4dccb0f7 as completed
+2025-04-03T09:10:22.544Z - youtube_summary - info - Task d1a33491-779c-4ada-922d-228a4dccb0f7 completed successfully
+2025-04-03T09:10:32.737Z - youtube_summary - info - Fetching status for task d1a33491-779c-4ada-922d-228a4dccb0f7
+2025-04-03T09:10:33.371Z - youtube_summary - info - Task d1a33491-779c-4ada-922d-228a4dccb0f7 status: completed
+2025-04-03T09:10:33.372Z - youtube_summary - info - Returning completed task data for d1a33491-779c-4ada-922d-228a4dccb0f7
+2025-04-03T09:12:35.034Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T09:12:35.539Z - youtube_summary - info - Database setup completed
+2025-04-03T09:12:35.540Z - youtube_summary - info - Database initialization complete
