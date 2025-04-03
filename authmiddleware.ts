@@ -21,6 +21,7 @@ export async function authenticateToken(
   res: Response,
   next: NextFunction
 ): Promise<void> {
+  console.log("vamowmeb");
   const data = await getRemoteConfig();
   const authValue = (data.auth.defaultValue as any)?.value === "true"; // Force TypeScript to accept it
 

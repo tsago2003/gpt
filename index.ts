@@ -552,22 +552,6 @@ The transcript is: ${transcriptText}`;
   }
 }
 
-app.get(
-  "/tasks/:taskId",
-  authenticateToken,
-  async (req: Request, res: Response): Promise<any> => {
-    try {
-      const task = await getTask(req.params.taskId);
-      if (!task) {
-        return res.status(404).json({ error: "Task not found" });
-      }
-      res.json(task);
-    } catch (error: any) {
-      res.status(500).json({ error: error.message });
-    }
-  }
-);
-
 interface TranscriptResponse {
   transcriptionAsText?: string;
   title?: string;
@@ -951,7 +935,7 @@ app.post(
   authenticateToken,
   async (req: Request, res: Response): Promise<any> => {
     const { audio_link, outputLanguageCode } = req.body;
-    if (!audio_link || outputLanguageCode) {
+    if (!audio_link || !outputLanguageCode) {
       return res.status(400).json({ error: "wrong request body" });
     }
     try {
@@ -978,6 +962,22 @@ app.post(
       return res.json({ task_id });
     } catch (err) {
       return res.status(400).json(err);
+    }
+  }
+);
+
+app.get(
+  "/tasks/:taskId",
+  authenticateToken,
+  async (req: Request, res: Response): Promise<any> => {
+    try {
+      const task = await getTask(req.params.taskId);
+      if (!task) {
+        return res.status(404).json({ error: "Task not found" });
+      }
+      res.json(task);
+    } catch (error: any) {
+      res.status(500).json({ error: error.message });
     }
   }
 );

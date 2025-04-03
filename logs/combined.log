@@ -1321,3 +1321,51 @@
 2025-04-03T08:37:22.546Z - youtube_summary - info - OpenAI client initialized successfully
 2025-04-03T08:37:22.871Z - youtube_summary - info - Database setup completed
 2025-04-03T08:37:22.872Z - youtube_summary - info - Database initialization complete
+2025-04-03T08:54:28.579Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:54:29.583Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:54:29.584Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:54:30.891Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:54:30.983Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:54:30.984Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:54:53.184Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:54:53.851Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:54:53.852Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:55:31.769Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T08:55:32.093Z - youtube_summary - info - Database setup completed
+2025-04-03T08:55:32.097Z - youtube_summary - info - Database initialization complete
+2025-04-03T08:55:37.291Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:55:37.987Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:55:37.988Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:05.095Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:05.840Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:56:05.841Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:21.300Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:21.819Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:56:21.820Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:22.856Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:23.042Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:56:23.043Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:41.288Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T08:56:41.679Z - youtube_summary - info - Database setup completed
+2025-04-03T08:56:41.680Z - youtube_summary - info - Database initialization complete
+2025-04-03T08:56:43.365Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:44.137Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:56:44.138Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:57.977Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:56:58.565Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:56:58.566Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:57:32.509Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T08:57:32.626Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:57:32.888Z - youtube_summary - info - Database setup completed
+2025-04-03T08:57:32.890Z - youtube_summary - info - Database initialization complete
+2025-04-03T08:57:33.238Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:57:33.239Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:57:59.312Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T08:57:59.505Z - youtube_summary - info - Database setup completed
+2025-04-03T08:57:59.506Z - youtube_summary - info - Database initialization complete
+2025-04-03T08:58:04.131Z - youtube_summary - info - Fetching status for task 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T08:58:04.658Z - youtube_summary - info - Task 38c511c8-e282-44b4-8bf1-4ae0b706b421 status: completed
+2025-04-03T08:58:04.659Z - youtube_summary - info - Returning completed task data for 38c511c8-e282-44b4-8bf1-4ae0b706b421
+2025-04-03T09:00:05.372Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-03T09:00:05.663Z - youtube_summary - info - Database setup completed
+2025-04-03T09:00:05.665Z - youtube_summary - info - Database initialization complete
