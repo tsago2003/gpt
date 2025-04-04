@@ -930,11 +930,20 @@ async function transcribeAudio(
     const audioStream = fs.createReadStream(filePath);
 
     // Step 5: Send the file to OpenAI's transcription API
-    const transcription = await openaiClient.audio.transcriptions.create({
-      model: "whisper-1",
-      file: audioStream, // Send the readable stream
-      language: inputLanguage, // Optionally specify the language
-    });
+
+    let transcription;
+    try {
+      transcription = await openaiClient.audio.transcriptions.create({
+        model: "whisper-1",
+        file: audioStream,
+        language: inputLanguage,
+      });
+    } catch (whisperError) {
+      console.error("Whisper error:", whisperError);
+      await updateTaskStatus(audioId, "failed", { error: whisperError });
+
+      return;
+    }
 
     console.log(transcription, "dddddddddddddddddddd");
     // Step 6: Handle the transcription result
