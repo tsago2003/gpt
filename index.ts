@@ -905,7 +905,8 @@ async function downloadAudioAsBuffer(audioUrl: string): Promise<Buffer> {
 async function transcribeAudio(
   audioUrl: string,
   audioId: string,
-  language: string
+  outputLanguagelanguage: string,
+  inputLanguage: string
 ): Promise<void> {
   try {
     if (!openaiClient) {
@@ -932,7 +933,7 @@ async function transcribeAudio(
     const transcription = await openaiClient.audio.transcriptions.create({
       model: "whisper-1",
       file: audioStream, // Send the readable stream
-      language: language, // Optionally specify the language
+      language: inputLanguage, // Optionally specify the language
     });
 
     console.log(transcription, "dddddddddddddddddddd");
@@ -942,7 +943,7 @@ async function transcribeAudio(
     if (transcription) {
       const summaryResult = await generateSummary(
         transcription.text,
-        language,
+        outputLanguagelanguage,
         "sound"
       );
       let title = `Video ${audioId}`;
@@ -979,8 +980,8 @@ app.post(
   "/submit_voice",
   authenticateToken,
   async (req: Request, res: Response): Promise<any> => {
-    const { audio_link, outputLanguageCode } = req.body;
-    if (!audio_link || !outputLanguageCode) {
+    const { audio_link, outputLanguageCode, transcriptLanguageCode } = req.body;
+    if (!audio_link || !outputLanguageCode || !transcriptLanguageCode) {
       return res.status(400).json({ error: "wrong request body" });
     }
     try {
@@ -1002,7 +1003,12 @@ app.post(
       );
 
       BackgroundTasks.add(() =>
-        transcribeAudio(audio_link, task_id, outputLanguageCode)
+        transcribeAudio(
+          audio_link,
+          task_id,
+          outputLanguageCode,
+          transcriptLanguageCode
+        )
       );
       return res.json({ task_id });
     } catch (err) {
