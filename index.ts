@@ -207,6 +207,7 @@ interface TaskStatusResponse {
   emoji?: string;
   title?: string;
   error?: string;
+  lengthInSeconds?: string;
 }
 
 // --------------------------
@@ -240,6 +241,8 @@ async function setupDatabase() {
     // Connect to our specific database
     conn = new Pool(dbConfig);
 
+    // await adminConn.query("DROP TABLE summaries");
+
     // Create table if it doesn't exist
     await conn.query(`
       CREATE TABLE IF NOT EXISTS summaries (
@@ -253,7 +256,7 @@ async function setupDatabase() {
         summary TEXT,
         emoji VARCHAR(10),
         status VARCHAR(20) NOT NULL,
-        length_in_seconds VARCHAR(255),
+        lengthInSeconds VARCHAR(255),
         error TEXT,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
@@ -299,7 +302,15 @@ class DatabaseHelper {
     taskId: string,
     updates: Partial<TaskStatusResponse>
   ): Promise<void> {
-    const { status, transcript, summary, emoji, title, error } = updates;
+    const {
+      status,
+      transcript,
+      summary,
+      emoji,
+      title,
+      error,
+      lengthInSeconds,
+    } = updates;
     const query = `
       UPDATE summaries
       SET 
@@ -308,7 +319,8 @@ class DatabaseHelper {
         summary = COALESCE($4, summary),
         emoji = COALESCE($5, emoji),
         title = COALESCE($6, title),
-        error = COALESCE($7, error)
+        error = COALESCE($7, error),
+        lengthInSecons = COALESCE($7, lengthInSeconds)
       WHERE task_id = $1
     `;
     await this.pool.query(query, [
@@ -319,6 +331,7 @@ class DatabaseHelper {
       emoji,
       title,
       error,
+      lengthInSeconds,
     ]);
   }
 
@@ -415,6 +428,7 @@ interface TaskUpdateFields {
   emoji?: string;
   title?: string;
   error?: string;
+  lengthInSeconds?: string;
 }
 
 async function updateTaskStatus(
@@ -469,6 +483,7 @@ interface Task {
   status: string;
   error?: string;
   created_at: Date;
+  lengthinseconds: string;
 }
 async function getTask(taskId: string): Promise<Task | null> {
   const client = await getDbConnection();
@@ -492,6 +507,7 @@ async function getTask(taskId: string): Promise<Task | null> {
 interface SummaryResult {
   emoji: string;
   summary: string;
+  title?: string;
 }
 
 async function generateSummary(
@@ -511,22 +527,29 @@ async function generateSummary(
   }
 
   try {
-    const prompt1 = `You are a voice sound summarizer. Complete the following two tasks:
-                    
-1. Summarize the entire sound transcript, providing the important points with proper sub-headings 
-   in a concise manner (within 500 words).
+    const prompt1 = `You are a voice sound summarizer. Complete the following three tasks:
 
-2. Choose a single emoji that best represents the main theme or topic of the video.
+    1. Summarize the entire sound transcript, providing the important points with proper sub-headings 
+       in a concise manner (within 500 words).
+    
+    2. Choose a single emoji that best represents the main theme or topic of the audio.
+    
+    3. Provide a clear and relevant title for the summary (maximum 50 characters).
+    
+    4. Dont forget to write a title of given sound.
 
-Format your response as follows:
-EMOJI: [single emoji here]
+    Format your response as follows:
+    TITLE: [your title here of voice sound - min 2 characters, max 50 characters]
+    EMOJI: [single emoji here]
+    
+    SUMMARY:
+    [your summary here with proper formatting to ${summaryLanguage} Language, don't forget to write it in ${summaryLanguage} — it's the most important thing here.]
+    
+    The transcript must be translated to ${summaryLanguage}.
+    
+    
+    The transcript is: ${transcriptText}`;
 
-SUMMARY:
-[your summary here with proper formatting to ${summaryLanguage} Language,  dont forget to write it in ${summaryLanguage} its the most important thing here.]
-
-the transcript must be translated to ${summaryLanguage}
-
-The transcript is: ${transcriptText}`;
     const prompt = `You are a YouTube video summarizer. Complete the following two tasks:
                     
 1. Summarize the entire video transcript, providing the important points with proper sub-headings 
@@ -558,26 +581,36 @@ The transcript is: ${transcriptText}`;
         },
         { role: "user", content: sound == "video" ? prompt : prompt1 },
       ],
-      max_tokens: sound == "voice" ? 150 : 1500,
+      max_tokens: sound == "sound" ? 150 : 1500,
       temperature: 0.5,
     });
 
     const responseText = response.choices[0]?.message?.content || "";
+    console.log(responseText), "responsetext";
     let emoji = "📝";
     let summary = responseText;
+    let title = "";
 
     try {
+      const titlePart =
+        responseText.split("TITLE:")[1]?.split("EMOJI:")[0]?.trim() || "";
       const emojiPart =
         responseText.split("EMOJI:")[1]?.split("SUMMARY:")[0]?.trim() || "";
       const summaryPart =
         responseText.split("SUMMARY:")[1]?.trim() || responseText;
-      emoji = emojiPart.split(/\s/)[0]; // Get first emoji
+
+      title = titlePart;
+      emoji = emojiPart.split(/\s/)[0]; // Get first emoji only
       summary = summaryPart;
+
+      console.log("TITLE:", title);
+      console.log("EMOJI:", emoji);
+      console.log("SUMMARY:", summary);
     } catch (e) {
       logger.warn("Couldn't parse summary response format");
     }
 
-    return { emoji, summary };
+    return { emoji, summary, title };
   } catch (error: any) {
     logger.error(`Error generating summary: ${error.message}`);
     return {
@@ -615,6 +648,8 @@ async function processVideo(
     let emoji = "📝";
     let summary = `Failed to generate summary for video ${videoId}.`;
     let status = "failed";
+    let lengthInSeconds = "";
+
     // Try to extract transcript using RapidAPI
     try {
       logger.info(`Requesting transcript for video ${videoId}`);
@@ -640,7 +675,9 @@ async function processVideo(
 
         // Extract transcript text
         if (typeof data === "object" && data !== null) {
-          console.log(data["lengthInSeconds"], "seconds");
+          if (data["lengthInSeconds"]) {
+            lengthInSeconds = data["lengthInSeconds"];
+          }
           if ("transcriptionAsText" in data) {
             transcriptText = data.transcriptionAsText || transcriptText;
             logger.info(
@@ -703,6 +740,8 @@ async function processVideo(
       {
         transcript: transcriptText,
         title,
+        lengthInSeconds: lengthInSeconds,
+
         summary,
         emoji,
       }
@@ -789,11 +828,13 @@ app.get(
 
     // If the task is completed, include the summary and emoji
     if (status === "completed") {
+      console.log(taskInfo, "taskinfo");
       logger.info(`Returning completed task data for ${task_id}`);
       response.transcript = taskInfo.transcript;
       response.summary = taskInfo.summary;
       response.emoji = taskInfo.emoji;
       response.title = taskInfo.title;
+      response.lengthInSeconds = taskInfo.lengthinseconds;
     }
     // If the task failed, include the error message
     else if (status === "failed") {
@@ -802,6 +843,8 @@ app.get(
       );
       response.error = taskInfo.error || "Unknown error";
     }
+
+    // console.log(response, "response");
 
     return res.json(response);
   }
@@ -933,11 +976,16 @@ async function transcribeAudio(
 
     let transcription;
     try {
-      transcription = await openaiClient.audio.transcriptions.create({
+      const options: any = {
         model: "whisper-1",
         file: audioStream,
-        language: inputLanguage,
-      });
+      };
+
+      if (inputLanguage !== "auto") {
+        options.language = inputLanguage;
+      }
+
+      transcription = await openaiClient.audio.transcriptions.create(options);
     } catch (whisperError) {
       console.error("Whisper error:", whisperError);
       await updateTaskStatus(audioId, "failed", { error: whisperError });
@@ -958,10 +1006,11 @@ async function transcribeAudio(
       let title = `Video ${audioId}`;
       let emoji = "📝";
       emoji = summaryResult.emoji;
+      console.log(summaryResult, "result");
       await updateTaskStatus(audioId, "completed", {
         emoji: emoji,
         summary: summaryResult.summary,
-        title,
+        title: summaryResult.title !== "" ? summaryResult.title : title,
         transcript: transcription.text,
       });
     }

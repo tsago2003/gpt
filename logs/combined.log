@@ -1597,3 +1597,265 @@
 2025-04-04T09:13:36.525Z - youtube_summary - info - OpenAI client initialized successfully
 2025-04-04T09:13:37.135Z - youtube_summary - info - Database setup completed
 2025-04-04T09:13:37.137Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:00:25.119Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:00:25.556Z - youtube_summary - info - Database setup completed
+2025-04-04T10:00:25.557Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:00:55.317Z - youtube_summary - info - Task cbb48d2b-cc29-4be1-b9fe-5d32220b174f completed successfully
+2025-04-04T10:01:01.285Z - youtube_summary - info - Fetching status for task cbb48d2b-cc29-4be1-b9fe-5d32220b174f
+2025-04-04T10:01:01.472Z - youtube_summary - info - Task cbb48d2b-cc29-4be1-b9fe-5d32220b174f status: completed
+2025-04-04T10:01:01.472Z - youtube_summary - info - Returning completed task data for cbb48d2b-cc29-4be1-b9fe-5d32220b174f
+2025-04-04T10:05:45.307Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:05:45.836Z - youtube_summary - info - Database setup completed
+2025-04-04T10:05:45.838Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:06:59.977Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:07:00.371Z - youtube_summary - info - Database setup completed
+2025-04-04T10:07:00.372Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:08:08.795Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:08:09.099Z - youtube_summary - info - Database setup completed
+2025-04-04T10:08:25.690Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:08:26.089Z - youtube_summary - info - Database setup completed
+2025-04-04T10:08:26.091Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:09:32.644Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:09:32.965Z - youtube_summary - info - Database setup completed
+2025-04-04T10:09:32.969Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:09:33.100Z - youtube_summary - info - Fetching status for task cbb48d2b-cc29-4be1-b9fe-5d32220b174f
+2025-04-04T10:09:33.600Z - youtube_summary - info - Task cbb48d2b-cc29-4be1-b9fe-5d32220b174f status: completed
+2025-04-04T10:09:33.601Z - youtube_summary - info - Returning completed task data for cbb48d2b-cc29-4be1-b9fe-5d32220b174f
+2025-04-04T10:09:50.767Z - youtube_summary - info - Task 352747df-039a-459b-a047-46762a2c8308 completed successfully
+2025-04-04T10:09:52.108Z - youtube_summary - info - Fetching status for task 352747df-039a-459b-a047-46762a2c8308
+2025-04-04T10:09:52.304Z - youtube_summary - info - Task 352747df-039a-459b-a047-46762a2c8308 status: completed
+2025-04-04T10:09:52.305Z - youtube_summary - info - Returning completed task data for 352747df-039a-459b-a047-46762a2c8308
+2025-04-04T10:10:10.134Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:10:10.445Z - youtube_summary - info - Database setup completed
+2025-04-04T10:10:10.446Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:10:24.142Z - youtube_summary - info - Task 9c1ba83f-f9ab-48a2-ae69-70166918bb04 completed successfully
+2025-04-04T10:10:51.294Z - youtube_summary - info - Fetching status for task 9c1ba83f-f9ab-48a2-ae69-70166918bb04
+2025-04-04T10:10:52.108Z - youtube_summary - info - Task 9c1ba83f-f9ab-48a2-ae69-70166918bb04 status: completed
+2025-04-04T10:10:52.109Z - youtube_summary - info - Returning completed task data for 9c1ba83f-f9ab-48a2-ae69-70166918bb04
+2025-04-04T10:12:08.407Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:12:08.802Z - youtube_summary - info - Database setup completed
+2025-04-04T10:12:08.804Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:12:25.223Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:12:25.436Z - youtube_summary - info - Database setup completed
+2025-04-04T10:12:25.437Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:12:40.185Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:12:40.660Z - youtube_summary - info - Database setup completed
+2025-04-04T10:12:40.661Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:12:52.827Z - youtube_summary - info - Task 1641129a-4121-46c4-a23a-8369f9f442e7 completed successfully
+2025-04-04T10:14:00.029Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:14:00.531Z - youtube_summary - info - Database setup completed
+2025-04-04T10:14:00.534Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:14:08.092Z - youtube_summary - info - Task ef7ee52c-a431-4a01-9b46-2175f8929dc5 completed successfully
+2025-04-04T10:14:38.936Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:14:39.328Z - youtube_summary - info - Database setup completed
+2025-04-04T10:14:39.330Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:15:10.625Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:15:10.865Z - youtube_summary - info - Database setup completed
+2025-04-04T10:15:10.867Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:15:17.210Z - youtube_summary - info - Task 73fd4710-7ca8-430d-8a0a-cfd75a0985eb completed successfully
+2025-04-04T10:16:02.325Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:16:03.004Z - youtube_summary - info - Database setup completed
+2025-04-04T10:16:03.007Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:16:10.259Z - youtube_summary - info - Task b49ceef2-d2af-4a16-85be-742fa7f2714d completed successfully
+2025-04-04T10:16:56.195Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:16:56.511Z - youtube_summary - info - Database setup completed
+2025-04-04T10:16:56.515Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:17:03.330Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:17:03.942Z - youtube_summary - info - Database setup completed
+2025-04-04T10:17:03.943Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:17:13.139Z - youtube_summary - info - Task 7dde2cdf-ae16-42b1-8256-f948a192579b completed successfully
+2025-04-04T10:17:48.300Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:17:48.778Z - youtube_summary - info - Database setup completed
+2025-04-04T10:17:48.780Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:18:00.658Z - youtube_summary - info - Task c363b6af-625f-419a-be21-040a50c872e5 completed successfully
+2025-04-04T10:18:35.499Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:18:35.870Z - youtube_summary - info - Database setup completed
+2025-04-04T10:18:35.873Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:18:42.515Z - youtube_summary - info - Task 433d1c77-4daa-4f2a-8ba6-42adc170e2e2 completed successfully
+2025-04-04T10:19:20.991Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:19:21.494Z - youtube_summary - info - Database setup completed
+2025-04-04T10:19:21.496Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:19:28.425Z - youtube_summary - info - Task 14edaeea-5524-45a3-82aa-0899077d0d3f completed successfully
+2025-04-04T10:19:56.815Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:19:57.219Z - youtube_summary - info - Database setup completed
+2025-04-04T10:19:57.220Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:20:14.615Z - youtube_summary - info - Task 937b963d-3fea-49c5-b4b8-eaaa673e15e9 completed successfully
+2025-04-04T10:20:22.334Z - youtube_summary - info - Fetching status for task 937b963d-3fea-49c5-b4b8-eaaa673e15e9
+2025-04-04T10:20:22.499Z - youtube_summary - info - Task 937b963d-3fea-49c5-b4b8-eaaa673e15e9 status: completed
+2025-04-04T10:20:22.500Z - youtube_summary - info - Returning completed task data for 937b963d-3fea-49c5-b4b8-eaaa673e15e9
+2025-04-04T10:22:08.938Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:22:09.203Z - youtube_summary - info - Database setup completed
+2025-04-04T10:22:09.205Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:22:24.160Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:22:24.684Z - youtube_summary - info - Database setup completed
+2025-04-04T10:22:24.685Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:22:36.151Z - youtube_summary - info - Fetching status for task 937b963d-3fea-49c5-b4b8-eaaa673e15e9
+2025-04-04T10:22:37.172Z - youtube_summary - info - Task 937b963d-3fea-49c5-b4b8-eaaa673e15e9 status: completed
+2025-04-04T10:22:37.173Z - youtube_summary - info - Returning completed task data for 937b963d-3fea-49c5-b4b8-eaaa673e15e9
+2025-04-04T10:22:49.044Z - youtube_summary - info - Task 0e09ed34-824a-4654-a53e-e99c4d280742 completed successfully
+2025-04-04T10:22:54.176Z - youtube_summary - info - Fetching status for task 0e09ed34-824a-4654-a53e-e99c4d280742
+2025-04-04T10:22:54.317Z - youtube_summary - info - Task 0e09ed34-824a-4654-a53e-e99c4d280742 status: completed
+2025-04-04T10:22:54.318Z - youtube_summary - info - Returning completed task data for 0e09ed34-824a-4654-a53e-e99c4d280742
+2025-04-04T10:23:11.901Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-04T10:23:11.902Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-04T10:23:11.902Z - youtube_summary - info - Generated task ID: 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad
+2025-04-04T10:23:11.902Z - youtube_summary - info - Registering task in database
+2025-04-04T10:23:12.901Z - youtube_summary - info - Starting background processing for task 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad
+2025-04-04T10:23:13.004Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad
+2025-04-04T10:23:13.004Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-04T10:23:14.771Z - youtube_summary - info - Response data type: array
+2025-04-04T10:23:14.771Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-04T10:23:23.461Z - youtube_summary - info - Generated summary with emoji 🌍
+2025-04-04T10:23:23.462Z - youtube_summary - info - Updating task 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad as completed
+2025-04-04T10:23:24.268Z - youtube_summary - info - Task 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad completed successfully
+2025-04-04T10:23:24.323Z - youtube_summary - info - Fetching status for task 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad
+2025-04-04T10:23:24.477Z - youtube_summary - info - Task 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad status: completed
+2025-04-04T10:23:24.477Z - youtube_summary - info - Returning completed task data for 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad
+2025-04-04T10:24:51.649Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:24:52.154Z - youtube_summary - info - Database setup completed
+2025-04-04T10:24:52.156Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:25:19.486Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:25:19.884Z - youtube_summary - info - Database setup completed
+2025-04-04T10:25:19.886Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:25:38.029Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:25:38.356Z - youtube_summary - info - Database setup completed
+2025-04-04T10:25:38.358Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:25:51.251Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:25:51.744Z - youtube_summary - info - Database setup completed
+2025-04-04T10:25:51.746Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:26:52.570Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:26:52.974Z - youtube_summary - info - Database setup completed
+2025-04-04T10:26:52.975Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:27:05.893Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:27:06.296Z - youtube_summary - info - Database setup completed
+2025-04-04T10:27:06.297Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:27:53.103Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:27:53.401Z - youtube_summary - info - Database setup completed
+2025-04-04T10:27:53.403Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:28:09.386Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:28:09.890Z - youtube_summary - info - Database setup completed
+2025-04-04T10:28:09.892Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:28:52.006Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:28:52.592Z - youtube_summary - info - Database setup completed
+2025-04-04T10:28:52.593Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:28:52.602Z - youtube_summary - info - Fetching status for task 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad
+2025-04-04T10:28:53.073Z - youtube_summary - info - Task 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad status: completed
+2025-04-04T10:28:53.074Z - youtube_summary - info - Returning completed task data for 4cbf020c-2c9e-42ae-bb0a-cbd75ec44fad
+2025-04-04T10:29:01.830Z - youtube_summary - info - Task 4b8a6220-7b2b-437e-8d63-b06d1a3dba44 completed successfully
+2025-04-04T10:29:02.210Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-04T10:29:02.211Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-04T10:29:02.211Z - youtube_summary - info - Generated task ID: e1d97934-3123-4ef6-8d91-fa82d0cafa14
+2025-04-04T10:29:02.212Z - youtube_summary - info - Registering task in database
+2025-04-04T10:29:02.417Z - youtube_summary - info - Starting background processing for task e1d97934-3123-4ef6-8d91-fa82d0cafa14
+2025-04-04T10:29:02.626Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID e1d97934-3123-4ef6-8d91-fa82d0cafa14
+2025-04-04T10:29:02.626Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-04T10:29:03.841Z - youtube_summary - info - Response data type: array
+2025-04-04T10:29:03.842Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-04T10:29:09.363Z - youtube_summary - info - Generated summary with emoji 🌍
+2025-04-04T10:29:09.363Z - youtube_summary - info - Updating task e1d97934-3123-4ef6-8d91-fa82d0cafa14 as completed
+2025-04-04T10:29:09.479Z - youtube_summary - error - Error updating task: column "lengthinseconds" of relation "summaries" does not exist
+2025-04-04T10:29:09.479Z - youtube_summary - error - Processing error for task e1d97934-3123-4ef6-8d91-fa82d0cafa14: column "lengthinseconds" of relation "summaries" does not exist
+2025-04-04T10:30:07.040Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:30:07.562Z - youtube_summary - info - Database setup completed
+2025-04-04T10:30:07.564Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:31:30.660Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:31:31.533Z - youtube_summary - info - Database setup completed
+2025-04-04T10:31:31.537Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:32:08.398Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:32:09.212Z - youtube_summary - info - Database setup completed
+2025-04-04T10:32:09.215Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:32:15.371Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:32:16.070Z - youtube_summary - info - Database setup completed
+2025-04-04T10:32:16.072Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:32:19.655Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-04T10:32:19.656Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-04T10:32:19.657Z - youtube_summary - info - Generated task ID: 38324fcf-01f6-449b-ac10-ba146d8df48c
+2025-04-04T10:32:19.658Z - youtube_summary - info - Registering task in database
+2025-04-04T10:32:20.640Z - youtube_summary - info - Starting background processing for task 38324fcf-01f6-449b-ac10-ba146d8df48c
+2025-04-04T10:32:20.760Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID 38324fcf-01f6-449b-ac10-ba146d8df48c
+2025-04-04T10:32:20.762Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-04T10:32:22.120Z - youtube_summary - info - Response data type: array
+2025-04-04T10:32:22.121Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-04T10:32:32.252Z - youtube_summary - info - Generated summary with emoji 🌍
+2025-04-04T10:32:32.253Z - youtube_summary - info - Updating task 38324fcf-01f6-449b-ac10-ba146d8df48c as completed
+2025-04-04T10:32:32.844Z - youtube_summary - info - Task 38324fcf-01f6-449b-ac10-ba146d8df48c completed successfully
+2025-04-04T10:32:40.191Z - youtube_summary - info - Fetching status for task 38324fcf-01f6-449b-ac10-ba146d8df48c
+2025-04-04T10:32:40.505Z - youtube_summary - info - Task 38324fcf-01f6-449b-ac10-ba146d8df48c status: completed
+2025-04-04T10:32:40.505Z - youtube_summary - info - Returning completed task data for 38324fcf-01f6-449b-ac10-ba146d8df48c
+2025-04-04T10:34:09.029Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:34:09.571Z - youtube_summary - info - Database setup completed
+2025-04-04T10:34:09.573Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:34:10.865Z - youtube_summary - info - Fetching status for task 38324fcf-01f6-449b-ac10-ba146d8df48c
+2025-04-04T10:34:21.522Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-04T10:34:21.523Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-04T10:34:21.523Z - youtube_summary - info - Generated task ID: e9605a47-235b-446a-ade9-ac99fbf7fd3b
+2025-04-04T10:34:21.524Z - youtube_summary - info - Registering task in database
+2025-04-04T10:34:21.614Z - youtube_summary - info - Starting background processing for task e9605a47-235b-446a-ade9-ac99fbf7fd3b
+2025-04-04T10:34:21.706Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID e9605a47-235b-446a-ade9-ac99fbf7fd3b
+2025-04-04T10:34:21.706Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-04T10:34:23.070Z - youtube_summary - info - Response data type: array
+2025-04-04T10:34:23.070Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-04T10:34:24.606Z - youtube_summary - info - Task 5dda2d2f-1e29-4dc0-b203-5beca1e8ebea completed successfully
+2025-04-04T10:34:32.879Z - youtube_summary - info - Generated summary with emoji 🌍
+2025-04-04T10:34:32.879Z - youtube_summary - info - Updating task e9605a47-235b-446a-ade9-ac99fbf7fd3b as completed
+2025-04-04T10:34:33.090Z - youtube_summary - info - Task e9605a47-235b-446a-ade9-ac99fbf7fd3b completed successfully
+2025-04-04T10:34:33.729Z - youtube_summary - info - Fetching status for task e9605a47-235b-446a-ade9-ac99fbf7fd3b
+2025-04-04T10:34:33.927Z - youtube_summary - info - Task e9605a47-235b-446a-ade9-ac99fbf7fd3b status: completed
+2025-04-04T10:34:33.928Z - youtube_summary - info - Returning completed task data for e9605a47-235b-446a-ade9-ac99fbf7fd3b
+2025-04-04T10:35:48.151Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:35:48.642Z - youtube_summary - info - Database setup completed
+2025-04-04T10:35:48.644Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:35:50.410Z - youtube_summary - info - Fetching status for task e9605a47-235b-446a-ade9-ac99fbf7fd3b
+2025-04-04T10:35:51.166Z - youtube_summary - info - Task e9605a47-235b-446a-ade9-ac99fbf7fd3b status: completed
+2025-04-04T10:35:51.172Z - youtube_summary - info - Returning completed task data for e9605a47-235b-446a-ade9-ac99fbf7fd3b
+2025-04-04T10:36:19.790Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:36:20.095Z - youtube_summary - info - Database setup completed
+2025-04-04T10:36:20.096Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:36:23.472Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-04T10:36:23.473Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-04T10:36:23.475Z - youtube_summary - info - Generated task ID: d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:36:23.475Z - youtube_summary - info - Registering task in database
+2025-04-04T10:36:24.193Z - youtube_summary - info - Starting background processing for task d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:36:24.284Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:36:24.285Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-04T10:36:25.994Z - youtube_summary - info - Response data type: array
+2025-04-04T10:36:25.995Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-04T10:36:35.661Z - youtube_summary - info - Fetching status for task d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:36:36.582Z - youtube_summary - info - Task d12308d8-0379-4abd-86ad-434158b983ac status: processing
+2025-04-04T10:36:37.638Z - youtube_summary - info - Generated summary with emoji 🌍
+2025-04-04T10:36:37.638Z - youtube_summary - info - Updating task d12308d8-0379-4abd-86ad-434158b983ac as completed
+2025-04-04T10:36:37.787Z - youtube_summary - info - Task d12308d8-0379-4abd-86ad-434158b983ac completed successfully
+2025-04-04T10:36:40.365Z - youtube_summary - info - Fetching status for task d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:36:40.567Z - youtube_summary - info - Task d12308d8-0379-4abd-86ad-434158b983ac status: completed
+2025-04-04T10:36:40.569Z - youtube_summary - info - Returning completed task data for d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:37:34.388Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:37:34.626Z - youtube_summary - info - Database setup completed
+2025-04-04T10:37:34.629Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:37:34.762Z - youtube_summary - info - Fetching status for task d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:37:35.235Z - youtube_summary - info - Task d12308d8-0379-4abd-86ad-434158b983ac status: completed
+2025-04-04T10:37:35.240Z - youtube_summary - info - Returning completed task data for d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:38:23.392Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:38:23.693Z - youtube_summary - info - Database setup completed
+2025-04-04T10:38:23.696Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:38:24.311Z - youtube_summary - info - Fetching status for task d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:38:25.352Z - youtube_summary - info - Task d12308d8-0379-4abd-86ad-434158b983ac status: completed
+2025-04-04T10:38:25.357Z - youtube_summary - info - Returning completed task data for d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:38:53.023Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:38:53.212Z - youtube_summary - info - Database setup completed
+2025-04-04T10:38:53.215Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:38:53.481Z - youtube_summary - info - Fetching status for task d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:38:54.014Z - youtube_summary - info - Task d12308d8-0379-4abd-86ad-434158b983ac status: completed
+2025-04-04T10:38:54.019Z - youtube_summary - info - Returning completed task data for d12308d8-0379-4abd-86ad-434158b983ac
+2025-04-04T10:39:47.680Z - youtube_summary - info - Task 9252dd59-4270-493f-9e17-68d02e67dd10 completed successfully
+2025-04-04T10:39:52.281Z - youtube_summary - info - Fetching status for task 9252dd59-4270-493f-9e17-68d02e67dd10
+2025-04-04T10:39:52.368Z - youtube_summary - info - Task 9252dd59-4270-493f-9e17-68d02e67dd10 status: completed
+2025-04-04T10:39:52.369Z - youtube_summary - info - Returning completed task data for 9252dd59-4270-493f-9e17-68d02e67dd10
+2025-04-04T10:48:39.600Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T10:48:39.939Z - youtube_summary - info - Database setup completed
+2025-04-04T10:48:39.941Z - youtube_summary - info - Database initialization complete
+2025-04-04T10:48:51.811Z - youtube_summary - info - Task a825c925-8fd5-4db5-a946-e57e07685517 completed successfully
+2025-04-04T10:48:53.658Z - youtube_summary - info - Task 74de9cdb-3e89-4097-a585-65a5ada311b3 completed successfully
+2025-04-04T10:49:04.922Z - youtube_summary - info - Task 7cb27f21-4347-473e-a7bd-bccc882f9299 completed successfully
+2025-04-04T10:49:14.176Z - youtube_summary - info - Fetching status for task 7cb27f21-4347-473e-a7bd-bccc882f9299
+2025-04-04T10:49:14.341Z - youtube_summary - info - Task 7cb27f21-4347-473e-a7bd-bccc882f9299 status: completed
+2025-04-04T10:49:14.342Z - youtube_summary - info - Returning completed task data for 7cb27f21-4347-473e-a7bd-bccc882f9299
