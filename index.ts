@@ -581,7 +581,7 @@ The transcript is: ${transcriptText}`;
         },
         { role: "user", content: sound == "video" ? prompt : prompt1 },
       ],
-      max_tokens: sound == "sound" ? 150 : 1500,
+      max_tokens: 1500,
       temperature: 0.5,
     });
 
@@ -906,6 +906,7 @@ async function processChat(
     const model = (data.openAiModel.defaultValue as any)?.value;
     const response = await openaiClient.chat.completions.create({
       model: model,
+      max_tokens: 150,
       messages: [
         { role: "system", content: systemPrompt },
         {
