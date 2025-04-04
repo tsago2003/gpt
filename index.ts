@@ -253,6 +253,7 @@ async function setupDatabase() {
         summary TEXT,
         emoji VARCHAR(10),
         status VARCHAR(20) NOT NULL,
+        length_in_seconds VARCHAR(255),
         error TEXT,
         created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
       )
@@ -500,7 +501,7 @@ async function generateSummary(
 ): Promise<SummaryResult> {
   // Check if OpenAI client is available
   if (!openaiClient) {
-    logger.warning(
+    console.warn(
       "OpenAI client not available. Using fallback summary generation."
     );
     return {
@@ -529,7 +530,7 @@ The transcript is: ${transcriptText}`;
     const prompt = `You are a YouTube video summarizer. Complete the following two tasks:
                     
 1. Summarize the entire video transcript, providing the important points with proper sub-headings 
-   in a concise manner (within 500 words).
+   in a concise manner (within ${sound == "voice" ? "250" : "500"} words).
 
 2. Choose a single emoji that best represents the main theme or topic of the video.
 
@@ -557,7 +558,7 @@ The transcript is: ${transcriptText}`;
         },
         { role: "user", content: sound == "video" ? prompt : prompt1 },
       ],
-      max_tokens: 150,
+      max_tokens: sound == "voice" ? 150 : 1500,
       temperature: 0.5,
     });
 
@@ -627,6 +628,7 @@ async function processVideo(
       // Check if request was successful
       if (response.status === 200) {
         let data = response.data;
+        console.log(data, "data");
         logger.info(
           `Response data type: ${Array.isArray(data) ? "array" : typeof data}`
         );
@@ -638,6 +640,7 @@ async function processVideo(
 
         // Extract transcript text
         if (typeof data === "object" && data !== null) {
+          console.log(data["lengthInSeconds"], "seconds");
           if ("transcriptionAsText" in data) {
             transcriptText = data.transcriptionAsText || transcriptText;
             logger.info(
@@ -776,7 +779,7 @@ app.get(
     const taskInfo = await getTask(task_id);
 
     if (!taskInfo) {
-      logger.warning(`Task ID not found: ${task_id}`);
+      console.log(`Task ID not found: ${task_id}`);
       return res.status(404).json({ error: "Task ID not found" });
     }
 
@@ -932,6 +935,7 @@ async function transcribeAudio(
       language: language, // Optionally specify the language
     });
 
+    console.log(transcription, "dddddddddddddddddddd");
     // Step 6: Handle the transcription result
     console.log("Transcription:", transcription.text); // Output the transcribed text
 
