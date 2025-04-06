@@ -2331,3 +2331,5 @@
 2025-04-06T18:19:17.687Z - youtube_summary - info - Updating task 8cad1acf-cd07-41df-a7e6-479497a9d4ff as completed
 2025-04-06T18:19:17.796Z - youtube_summary - info - Task 8cad1acf-cd07-41df-a7e6-479497a9d4ff completed successfully
 2025-04-06T18:19:23.086Z - youtube_summary - info - Task 6799dbbb-5768-428e-835a-bcd4f5549d05 completed successfully
+2025-04-06T18:26:22.659Z - youtube_summary - info - Database setup completed
+2025-04-06T18:26:22.665Z - youtube_summary - info - Database initialization complete
