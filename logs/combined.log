@@ -1859,3 +1859,475 @@
 2025-04-04T10:49:14.176Z - youtube_summary - info - Fetching status for task 7cb27f21-4347-473e-a7bd-bccc882f9299
 2025-04-04T10:49:14.341Z - youtube_summary - info - Task 7cb27f21-4347-473e-a7bd-bccc882f9299 status: completed
 2025-04-04T10:49:14.342Z - youtube_summary - info - Returning completed task data for 7cb27f21-4347-473e-a7bd-bccc882f9299
+2025-04-04T11:02:22.484Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-04T11:02:22.835Z - youtube_summary - info - Database setup completed
+2025-04-04T11:02:22.837Z - youtube_summary - info - Database initialization complete
+2025-04-04T11:03:07.832Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=X1mC1XY65Kc, model: undefined, language: georgia
+2025-04-04T11:03:07.832Z - youtube_summary - info - Extracted video ID: X1mC1XY65Kc
+2025-04-04T11:03:07.833Z - youtube_summary - info - Generated task ID: e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:07.833Z - youtube_summary - info - Registering task in database
+2025-04-04T11:03:08.845Z - youtube_summary - info - Starting background processing for task e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:08.947Z - youtube_summary - info - Processing video X1mC1XY65Kc with task ID e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:08.948Z - youtube_summary - info - Requesting transcript for video X1mC1XY65Kc
+2025-04-04T11:03:10.089Z - youtube_summary - info - Response data type: array
+2025-04-04T11:03:10.089Z - youtube_summary - info - Successfully extracted transcript of length 881
+2025-04-04T11:03:21.647Z - youtube_summary - info - Generated summary with emoji 🌍
+2025-04-04T11:03:21.648Z - youtube_summary - info - Updating task e69c0844-0554-4ddf-ad21-f3d60c49449f as completed
+2025-04-04T11:03:22.565Z - youtube_summary - info - Task e69c0844-0554-4ddf-ad21-f3d60c49449f completed successfully
+2025-04-04T11:03:23.270Z - youtube_summary - info - Fetching status for task e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:23.456Z - youtube_summary - info - Task e69c0844-0554-4ddf-ad21-f3d60c49449f status: completed
+2025-04-04T11:03:23.457Z - youtube_summary - info - Returning completed task data for e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:25.491Z - youtube_summary - info - Fetching status for task e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:25.581Z - youtube_summary - info - Task e69c0844-0554-4ddf-ad21-f3d60c49449f status: completed
+2025-04-04T11:03:25.583Z - youtube_summary - info - Returning completed task data for e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:26.976Z - youtube_summary - info - Fetching status for task e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:27.175Z - youtube_summary - info - Task e69c0844-0554-4ddf-ad21-f3d60c49449f status: completed
+2025-04-04T11:03:27.178Z - youtube_summary - info - Returning completed task data for e69c0844-0554-4ddf-ad21-f3d60c49449f
+2025-04-04T11:03:58.311Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=0EqrzVfguyE, model: undefined, language: georgia
+2025-04-04T11:03:58.312Z - youtube_summary - info - Extracted video ID: 0EqrzVfguyE
+2025-04-04T11:03:58.312Z - youtube_summary - info - Generated task ID: e39826cb-787c-4201-a2c6-494040bc32b7
+2025-04-04T11:03:58.312Z - youtube_summary - info - Registering task in database
+2025-04-04T11:03:59.330Z - youtube_summary - info - Starting background processing for task e39826cb-787c-4201-a2c6-494040bc32b7
+2025-04-04T11:03:59.432Z - youtube_summary - info - Processing video 0EqrzVfguyE with task ID e39826cb-787c-4201-a2c6-494040bc32b7
+2025-04-04T11:03:59.432Z - youtube_summary - info - Requesting transcript for video 0EqrzVfguyE
+2025-04-04T11:04:00.459Z - youtube_summary - info - Response data type: object
+2025-04-04T11:04:00.460Z - youtube_summary - info - Updating task e39826cb-787c-4201-a2c6-494040bc32b7 as completed
+2025-04-04T11:04:00.569Z - youtube_summary - info - Task e39826cb-787c-4201-a2c6-494040bc32b7 completed successfully
+2025-04-04T11:04:11.726Z - youtube_summary - info - Fetching status for task e39826cb-787c-4201-a2c6-494040bc32b7
+2025-04-04T11:04:12.535Z - youtube_summary - info - Task e39826cb-787c-4201-a2c6-494040bc32b7 status: failed
+2025-04-04T11:04:12.535Z - youtube_summary - info - Returning failed task data for e39826cb-787c-4201-a2c6-494040bc32b7: null
+2025-04-04T11:04:14.774Z - youtube_summary - info - Fetching status for task e39826cb-787c-4201-a2c6-494040bc32b7
+2025-04-04T11:04:14.888Z - youtube_summary - info - Task e39826cb-787c-4201-a2c6-494040bc32b7 status: failed
+2025-04-04T11:04:14.889Z - youtube_summary - info - Returning failed task data for e39826cb-787c-4201-a2c6-494040bc32b7: null
+2025-04-04T11:05:37.119Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=gB98kRDUTM4, model: undefined, language: english
+2025-04-04T11:05:37.120Z - youtube_summary - info - Extracted video ID: gB98kRDUTM4
+2025-04-04T11:05:37.120Z - youtube_summary - info - Generated task ID: 7c9b5a06-77e1-4530-8f43-cf27094c486d
+2025-04-04T11:05:37.120Z - youtube_summary - info - Registering task in database
+2025-04-04T11:05:37.929Z - youtube_summary - info - Starting background processing for task 7c9b5a06-77e1-4530-8f43-cf27094c486d
+2025-04-04T11:05:38.034Z - youtube_summary - info - Processing video gB98kRDUTM4 with task ID 7c9b5a06-77e1-4530-8f43-cf27094c486d
+2025-04-04T11:05:38.034Z - youtube_summary - info - Requesting transcript for video gB98kRDUTM4
+2025-04-04T11:05:39.447Z - youtube_summary - info - Response data type: object
+2025-04-04T11:05:39.448Z - youtube_summary - info - Updating task 7c9b5a06-77e1-4530-8f43-cf27094c486d as completed
+2025-04-04T11:05:39.539Z - youtube_summary - info - Task 7c9b5a06-77e1-4530-8f43-cf27094c486d completed successfully
+2025-04-04T11:05:52.790Z - youtube_summary - info - Fetching status for task 7c9b5a06-77e1-4530-8f43-cf27094c486d
+2025-04-04T11:05:53.493Z - youtube_summary - info - Task 7c9b5a06-77e1-4530-8f43-cf27094c486d status: failed
+2025-04-04T11:05:53.494Z - youtube_summary - info - Returning failed task data for 7c9b5a06-77e1-4530-8f43-cf27094c486d: null
+2025-04-04T11:06:27.379Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-04T11:06:27.379Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-04T11:06:27.379Z - youtube_summary - info - Generated task ID: 00e4dd8e-2d36-4271-aa9d-15a83a091ce1
+2025-04-04T11:06:27.379Z - youtube_summary - info - Registering task in database
+2025-04-04T11:06:28.306Z - youtube_summary - info - Starting background processing for task 00e4dd8e-2d36-4271-aa9d-15a83a091ce1
+2025-04-04T11:06:28.409Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 00e4dd8e-2d36-4271-aa9d-15a83a091ce1
+2025-04-04T11:06:28.410Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-04T11:06:29.647Z - youtube_summary - info - Response data type: array
+2025-04-04T11:06:29.647Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-04T11:06:39.888Z - youtube_summary - info - Generated summary with emoji 🏙️
+2025-04-04T11:06:39.888Z - youtube_summary - info - Updating task 00e4dd8e-2d36-4271-aa9d-15a83a091ce1 as completed
+2025-04-04T11:06:40.697Z - youtube_summary - info - Task 00e4dd8e-2d36-4271-aa9d-15a83a091ce1 completed successfully
+2025-04-06T17:17:49.263Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:17:49.865Z - youtube_summary - info - Database setup completed
+2025-04-06T17:17:49.867Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:20:31.709Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:20:32.298Z - youtube_summary - info - Database setup completed
+2025-04-06T17:20:32.299Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:20:54.884Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:20:55.282Z - youtube_summary - info - Database setup completed
+2025-04-06T17:20:55.283Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:21:04.147Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:21:04.477Z - youtube_summary - info - Database setup completed
+2025-04-06T17:21:04.479Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:21:36.408Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:21:36.846Z - youtube_summary - info - Database setup completed
+2025-04-06T17:21:36.847Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:21:42.725Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:21:43.081Z - youtube_summary - info - Database setup completed
+2025-04-06T17:21:43.083Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:22:55.544Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:22:55.902Z - youtube_summary - info - Database setup completed
+2025-04-06T17:22:55.904Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:23:13.063Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:23:13.561Z - youtube_summary - info - Database setup completed
+2025-04-06T17:23:13.562Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:23:20.255Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:23:20.945Z - youtube_summary - info - Database setup completed
+2025-04-06T17:23:20.947Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:23:35.457Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:23:35.816Z - youtube_summary - info - Database setup completed
+2025-04-06T17:23:35.817Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:23:44.213Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:23:44.632Z - youtube_summary - info - Database setup completed
+2025-04-06T17:23:44.634Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:23:50.263Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:23:50.790Z - youtube_summary - info - Database setup completed
+2025-04-06T17:23:50.792Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:24:54.221Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:24:54.684Z - youtube_summary - info - Database setup completed
+2025-04-06T17:24:54.687Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:25:07.110Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:25:07.427Z - youtube_summary - info - Database setup completed
+2025-04-06T17:25:07.429Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:25:26.344Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:25:26.814Z - youtube_summary - info - Database setup completed
+2025-04-06T17:25:26.816Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:25:38.177Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:25:38.849Z - youtube_summary - info - Database setup completed
+2025-04-06T17:25:38.852Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:26:00.999Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:26:01.533Z - youtube_summary - info - Database setup completed
+2025-04-06T17:26:01.534Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:26:16.092Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:26:26.935Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:26:27.291Z - youtube_summary - info - Database setup completed
+2025-04-06T17:26:27.293Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:26:52.841Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:26:53.356Z - youtube_summary - info - Database setup completed
+2025-04-06T17:26:53.357Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:27:00.233Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:27:00.851Z - youtube_summary - info - Database setup completed
+2025-04-06T17:27:00.852Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:27:25.828Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:27:26.347Z - youtube_summary - info - Database setup completed
+2025-04-06T17:27:26.349Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:27:51.133Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:27:51.545Z - youtube_summary - info - Database setup completed
+2025-04-06T17:27:51.547Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:28:26.451Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:28:27.294Z - youtube_summary - info - Database setup completed
+2025-04-06T17:28:27.295Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:28:35.274Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:28:35.820Z - youtube_summary - info - Database setup completed
+2025-04-06T17:28:35.823Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:28:53.694Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:28:54.107Z - youtube_summary - info - Database setup completed
+2025-04-06T17:28:54.109Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:29:03.047Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:29:03.376Z - youtube_summary - info - Database setup completed
+2025-04-06T17:29:03.377Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:29:40.798Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:29:41.233Z - youtube_summary - info - Database setup completed
+2025-04-06T17:29:41.236Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:30:14.299Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:30:15.102Z - youtube_summary - info - Database setup completed
+2025-04-06T17:30:15.104Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:30:34.168Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:30:34.670Z - youtube_summary - info - Database setup completed
+2025-04-06T17:30:34.672Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:31:24.958Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:31:25.571Z - youtube_summary - info - Database setup completed
+2025-04-06T17:31:25.572Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:31:32.303Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:31:32.719Z - youtube_summary - info - Database setup completed
+2025-04-06T17:31:32.721Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:31:45.850Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:31:46.258Z - youtube_summary - info - Database setup completed
+2025-04-06T17:31:46.259Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:32:16.863Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:32:17.241Z - youtube_summary - info - Database setup completed
+2025-04-06T17:32:17.242Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:32:30.818Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:32:31.338Z - youtube_summary - info - Database setup completed
+2025-04-06T17:32:31.340Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:32:56.116Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:32:56.920Z - youtube_summary - info - Database setup completed
+2025-04-06T17:32:56.922Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:33:36.965Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:33:37.370Z - youtube_summary - info - Database setup completed
+2025-04-06T17:33:37.371Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:34:08.797Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:34:09.308Z - youtube_summary - info - Database setup completed
+2025-04-06T17:34:09.310Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:34:15.572Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:34:16.080Z - youtube_summary - info - Database setup completed
+2025-04-06T17:34:16.082Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:34:24.389Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:34:24.908Z - youtube_summary - info - Database setup completed
+2025-04-06T17:34:24.910Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:34:35.546Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:34:35.843Z - youtube_summary - info - Database setup completed
+2025-04-06T17:34:35.844Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:34:49.159Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:34:49.782Z - youtube_summary - info - Database setup completed
+2025-04-06T17:34:49.783Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:35:30.647Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:35:36.267Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:35:36.672Z - youtube_summary - info - Database setup completed
+2025-04-06T17:35:36.673Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:36:01.148Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:36:01.762Z - youtube_summary - info - Database setup completed
+2025-04-06T17:36:01.765Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:36:14.570Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:36:15.001Z - youtube_summary - info - Database setup completed
+2025-04-06T17:36:15.002Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:36:35.157Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:36:35.574Z - youtube_summary - info - Database setup completed
+2025-04-06T17:36:35.576Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:36:59.216Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:36:59.822Z - youtube_summary - info - Database setup completed
+2025-04-06T17:36:59.823Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:37:44.496Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:37:44.899Z - youtube_summary - info - Database setup completed
+2025-04-06T17:37:44.901Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:38:11.902Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:38:12.421Z - youtube_summary - info - Database setup completed
+2025-04-06T17:38:12.423Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:38:42.353Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:38:42.928Z - youtube_summary - info - Database setup completed
+2025-04-06T17:38:42.930Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:38:52.226Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:38:52.752Z - youtube_summary - info - Database setup completed
+2025-04-06T17:38:52.754Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:39:17.942Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:39:18.344Z - youtube_summary - info - Database setup completed
+2025-04-06T17:39:18.345Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:40:37.600Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:40:38.096Z - youtube_summary - info - Database setup completed
+2025-04-06T17:40:38.098Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:40:59.008Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:40:59.393Z - youtube_summary - info - Database setup completed
+2025-04-06T17:40:59.394Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:41:23.580Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:41:24.207Z - youtube_summary - info - Database setup completed
+2025-04-06T17:41:24.209Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:41:32.698Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:41:33.182Z - youtube_summary - info - Database setup completed
+2025-04-06T17:41:33.185Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:41:42.944Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:41:43.409Z - youtube_summary - info - Database setup completed
+2025-04-06T17:41:43.410Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:41:56.433Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:41:56.935Z - youtube_summary - info - Database setup completed
+2025-04-06T17:41:56.936Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:42:27.556Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:42:28.065Z - youtube_summary - info - Database setup completed
+2025-04-06T17:42:28.067Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:43:03.269Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:43:03.683Z - youtube_summary - info - Database setup completed
+2025-04-06T17:43:03.684Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:43:20.898Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:43:21.309Z - youtube_summary - info - Database setup completed
+2025-04-06T17:43:21.312Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:43:55.000Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:43:55.506Z - youtube_summary - info - Database setup completed
+2025-04-06T17:43:55.507Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:44:03.743Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:44:04.253Z - youtube_summary - info - Database setup completed
+2025-04-06T17:44:04.255Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:44:32.279Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:44:32.669Z - youtube_summary - info - Database setup completed
+2025-04-06T17:44:32.671Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:45:11.261Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:45:17.120Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:45:17.525Z - youtube_summary - info - Database setup completed
+2025-04-06T17:45:17.527Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:45:39.958Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:45:40.568Z - youtube_summary - info - Database setup completed
+2025-04-06T17:45:40.569Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:46:10.308Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:46:10.872Z - youtube_summary - info - Database setup completed
+2025-04-06T17:46:10.873Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:46:17.020Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:46:17.526Z - youtube_summary - info - Database setup completed
+2025-04-06T17:46:17.527Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:46:27.481Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:46:27.975Z - youtube_summary - info - Database setup completed
+2025-04-06T17:46:27.976Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:46:45.701Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:46:46.200Z - youtube_summary - info - Database setup completed
+2025-04-06T17:46:46.202Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:46:54.501Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:46:55.126Z - youtube_summary - info - Database setup completed
+2025-04-06T17:46:55.127Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:47:07.206Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:47:07.808Z - youtube_summary - info - Database setup completed
+2025-04-06T17:47:07.810Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:47:29.934Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:47:30.552Z - youtube_summary - info - Database setup completed
+2025-04-06T17:47:30.554Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:47:41.207Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:47:41.797Z - youtube_summary - info - Database setup completed
+2025-04-06T17:47:41.799Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:47:57.090Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:47:57.680Z - youtube_summary - info - Database setup completed
+2025-04-06T17:47:57.682Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:48:17.454Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:48:17.852Z - youtube_summary - info - Database setup completed
+2025-04-06T17:48:17.853Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:48:30.559Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:48:31.173Z - youtube_summary - info - Database setup completed
+2025-04-06T17:48:31.174Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:48:52.616Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:48:53.169Z - youtube_summary - info - Database setup completed
+2025-04-06T17:48:53.171Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:49:13.491Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:49:13.900Z - youtube_summary - info - Database setup completed
+2025-04-06T17:49:13.902Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:49:21.525Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:49:22.373Z - youtube_summary - info - Database setup completed
+2025-04-06T17:49:22.374Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:49:56.467Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:49:57.582Z - youtube_summary - info - Database setup completed
+2025-04-06T17:49:57.584Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:50:17.002Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:50:17.522Z - youtube_summary - info - Database setup completed
+2025-04-06T17:50:17.524Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:51:00.791Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:00.795Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:01.280Z - youtube_summary - info - Database setup completed
+2025-04-06T17:51:01.281Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:51:01.369Z - youtube_summary - info - Database setup completed
+2025-04-06T17:51:01.371Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:51:10.409Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:10.419Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:10.710Z - youtube_summary - info - Database setup completed
+2025-04-06T17:51:10.712Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:51:10.733Z - youtube_summary - info - Database setup completed
+2025-04-06T17:51:10.734Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:51:26.992Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:27.227Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:27.288Z - youtube_summary - info - Database setup completed
+2025-04-06T17:51:27.291Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:51:53.611Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:53.615Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:51:54.025Z - youtube_summary - info - Database setup completed
+2025-04-06T17:51:54.027Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:52:00.344Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:52:00.875Z - youtube_summary - info - Database setup completed
+2025-04-06T17:52:00.876Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:52:16.772Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:52:53.010Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:52:53.403Z - youtube_summary - info - Database setup completed
+2025-04-06T17:52:53.405Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:54:46.458Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:54:46.963Z - youtube_summary - info - Database setup completed
+2025-04-06T17:54:46.965Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:54:54.802Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T17:54:54.802Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T17:54:54.803Z - youtube_summary - info - Generated task ID: 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76
+2025-04-06T17:54:54.803Z - youtube_summary - info - Registering task in database
+2025-04-06T17:54:55.769Z - youtube_summary - info - Starting background processing for task 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76
+2025-04-06T17:54:55.865Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76
+2025-04-06T17:54:55.866Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T17:54:57.124Z - youtube_summary - info - Response data type: array
+2025-04-06T17:54:57.124Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T17:54:57.125Z - youtube_summary - info - Generated summary with emoji 📝
+2025-04-06T17:54:57.125Z - youtube_summary - info - Updating task 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76 as completed
+2025-04-06T17:54:57.213Z - youtube_summary - info - Task 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76 completed successfully
+2025-04-06T17:55:08.289Z - youtube_summary - info - Fetching status for task 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76
+2025-04-06T17:55:09.316Z - youtube_summary - info - Task 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76 status: completed
+2025-04-06T17:55:09.318Z - youtube_summary - info - Returning completed task data for 1a25ea1a-8a95-4ef7-bebb-20a70fd6eb76
+2025-04-06T17:56:14.841Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:56:15.245Z - youtube_summary - info - Database setup completed
+2025-04-06T17:56:15.247Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:57:03.992Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:57:04.501Z - youtube_summary - info - Database setup completed
+2025-04-06T17:57:04.503Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:57:06.547Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T17:57:06.549Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T17:57:06.551Z - youtube_summary - info - Generated task ID: d3ca9833-998b-40cf-aacc-413d9e279b25
+2025-04-06T17:57:06.552Z - youtube_summary - info - Registering task in database
+2025-04-06T17:57:07.454Z - youtube_summary - info - Starting background processing for task d3ca9833-998b-40cf-aacc-413d9e279b25
+2025-04-06T17:57:07.554Z - youtube_summary - info - Processing video _FLo14GMYos with task ID d3ca9833-998b-40cf-aacc-413d9e279b25
+2025-04-06T17:57:07.556Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T17:57:09.152Z - youtube_summary - info - Response data type: array
+2025-04-06T17:57:09.153Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T17:57:09.154Z - youtube_summary - info - Generated summary with emoji 📝
+2025-04-06T17:57:09.154Z - youtube_summary - info - Updating task d3ca9833-998b-40cf-aacc-413d9e279b25 as completed
+2025-04-06T17:57:09.264Z - youtube_summary - info - Task d3ca9833-998b-40cf-aacc-413d9e279b25 completed successfully
+2025-04-06T17:57:43.260Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T17:57:43.261Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T17:57:43.261Z - youtube_summary - info - Generated task ID: 9fe468b7-aa85-4a76-86a9-7a0afb65b35f
+2025-04-06T17:57:43.261Z - youtube_summary - info - Registering task in database
+2025-04-06T17:57:44.111Z - youtube_summary - info - Starting background processing for task 9fe468b7-aa85-4a76-86a9-7a0afb65b35f
+2025-04-06T17:57:44.203Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 9fe468b7-aa85-4a76-86a9-7a0afb65b35f
+2025-04-06T17:57:44.203Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T17:57:45.591Z - youtube_summary - info - Response data type: array
+2025-04-06T17:57:45.592Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T17:57:45.592Z - youtube_summary - info - Generated summary with emoji 📝
+2025-04-06T17:57:45.592Z - youtube_summary - info - Updating task 9fe468b7-aa85-4a76-86a9-7a0afb65b35f as completed
+2025-04-06T17:57:45.680Z - youtube_summary - info - Task 9fe468b7-aa85-4a76-86a9-7a0afb65b35f completed successfully
+2025-04-06T17:58:19.976Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T17:58:20.466Z - youtube_summary - info - Database setup completed
+2025-04-06T17:58:20.467Z - youtube_summary - info - Database initialization complete
+2025-04-06T17:59:00.732Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T17:59:00.733Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T17:59:00.733Z - youtube_summary - info - Generated task ID: a77e63cf-4798-4a9a-bf4d-f22cbbabea4d
+2025-04-06T17:59:00.733Z - youtube_summary - info - Registering task in database
+2025-04-06T17:59:01.627Z - youtube_summary - info - Starting background processing for task a77e63cf-4798-4a9a-bf4d-f22cbbabea4d
+2025-04-06T17:59:01.772Z - youtube_summary - info - Processing video _FLo14GMYos with task ID a77e63cf-4798-4a9a-bf4d-f22cbbabea4d
+2025-04-06T17:59:01.773Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T17:59:03.341Z - youtube_summary - info - Response data type: array
+2025-04-06T17:59:03.341Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T17:59:03.342Z - youtube_summary - info - Generated summary with emoji 📝
+2025-04-06T17:59:03.342Z - youtube_summary - info - Updating task a77e63cf-4798-4a9a-bf4d-f22cbbabea4d as completed
+2025-04-06T17:59:03.441Z - youtube_summary - info - Task a77e63cf-4798-4a9a-bf4d-f22cbbabea4d completed successfully
+2025-04-06T18:00:32.368Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:00:32.763Z - youtube_summary - info - Database setup completed
+2025-04-06T18:00:32.765Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:02:27.240Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:02:27.541Z - youtube_summary - info - Database setup completed
+2025-04-06T18:02:27.543Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:06:16.929Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:06:17.339Z - youtube_summary - info - Database setup completed
+2025-04-06T18:06:17.341Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:06:30.490Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T18:06:30.491Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T18:06:30.493Z - youtube_summary - info - Generated task ID: 3954cd28-a9e1-4a40-b2c6-3a8e4633ba4c
+2025-04-06T18:06:30.494Z - youtube_summary - info - Registering task in database
+2025-04-06T18:06:31.039Z - youtube_summary - info - Starting background processing for task 3954cd28-a9e1-4a40-b2c6-3a8e4633ba4c
+2025-04-06T18:06:31.132Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 3954cd28-a9e1-4a40-b2c6-3a8e4633ba4c
+2025-04-06T18:06:31.133Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T18:06:32.298Z - youtube_summary - info - Response data type: array
+2025-04-06T18:06:32.298Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T18:06:32.299Z - youtube_summary - info - Generated summary with emoji 📝
+2025-04-06T18:06:32.300Z - youtube_summary - info - Updating task 3954cd28-a9e1-4a40-b2c6-3a8e4633ba4c as completed
+2025-04-06T18:06:32.624Z - youtube_summary - info - Task 3954cd28-a9e1-4a40-b2c6-3a8e4633ba4c completed successfully
+2025-04-06T18:10:14.025Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:10:14.425Z - youtube_summary - info - Database setup completed
+2025-04-06T18:10:14.427Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:12:38.618Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:12:39.123Z - youtube_summary - info - Database setup completed
+2025-04-06T18:12:39.125Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:12:46.814Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:12:47.131Z - youtube_summary - info - Database setup completed
+2025-04-06T18:12:47.133Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:13:31.854Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:13:32.371Z - youtube_summary - info - Database setup completed
+2025-04-06T18:13:32.372Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:14:59.941Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:15:00.388Z - youtube_summary - info - Database setup completed
+2025-04-06T18:15:00.389Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:15:08.455Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:15:08.937Z - youtube_summary - info - Database setup completed
+2025-04-06T18:15:08.939Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:15:25.216Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:15:25.624Z - youtube_summary - info - Database setup completed
+2025-04-06T18:15:25.625Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:18:47.971Z - youtube_summary - info - Database setup completed
+2025-04-06T18:18:47.976Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:18:52.892Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:19:05.680Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T18:19:05.681Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T18:19:05.681Z - youtube_summary - info - Generated task ID: e72d9137-30a1-4c14-b31e-fdf1c46d55bd
+2025-04-06T18:19:05.682Z - youtube_summary - info - Registering task in database
+2025-04-06T18:19:05.776Z - youtube_summary - info - Starting background processing for task e72d9137-30a1-4c14-b31e-fdf1c46d55bd
+2025-04-06T18:19:05.897Z - youtube_summary - info - Processing video _FLo14GMYos with task ID e72d9137-30a1-4c14-b31e-fdf1c46d55bd
+2025-04-06T18:19:05.897Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T18:19:07.148Z - youtube_summary - info - Response data type: array
+2025-04-06T18:19:07.149Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T18:19:09.051Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T18:19:09.051Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T18:19:09.052Z - youtube_summary - info - Generated task ID: 8cad1acf-cd07-41df-a7e6-479497a9d4ff
+2025-04-06T18:19:09.052Z - youtube_summary - info - Registering task in database
+2025-04-06T18:19:09.143Z - youtube_summary - info - Starting background processing for task 8cad1acf-cd07-41df-a7e6-479497a9d4ff
+2025-04-06T18:19:09.237Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 8cad1acf-cd07-41df-a7e6-479497a9d4ff
+2025-04-06T18:19:09.238Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T18:19:10.080Z - youtube_summary - info - Task b9c92bd7-635f-4dc5-85c2-52e9bd336a40 completed successfully
+2025-04-06T18:19:10.140Z - youtube_summary - info - Response data type: array
+2025-04-06T18:19:10.141Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T18:19:14.928Z - youtube_summary - info - Generated summary with emoji 🏙️
+2025-04-06T18:19:14.929Z - youtube_summary - info - Updating task e72d9137-30a1-4c14-b31e-fdf1c46d55bd as completed
+2025-04-06T18:19:15.102Z - youtube_summary - info - Task e72d9137-30a1-4c14-b31e-fdf1c46d55bd completed successfully
+2025-04-06T18:19:17.687Z - youtube_summary - info - Generated summary with emoji 🏙️
+2025-04-06T18:19:17.687Z - youtube_summary - info - Updating task 8cad1acf-cd07-41df-a7e6-479497a9d4ff as completed
+2025-04-06T18:19:17.796Z - youtube_summary - info - Task 8cad1acf-cd07-41df-a7e6-479497a9d4ff completed successfully
+2025-04-06T18:19:23.086Z - youtube_summary - info - Task 6799dbbb-5768-428e-835a-bcd4f5549d05 completed successfully

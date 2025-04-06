@@ -5,7 +5,7 @@ import * as dotenv from "dotenv";
 dotenv.config();
 
 // Load Firebase credentials (replace with actual path)
-const serviceAccount = require("./cert.json");
+const serviceAccount = require("./../../cert.json");
 
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
