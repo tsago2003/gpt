@@ -16,12 +16,21 @@ import OpenAI from "openai";
 import { FsReadStream } from "openai/_shims/auto/types";
 import { error } from "console";
 
+// import { authenticateToken } from "./authmiddleware";
+// import { getRemoteConfig } from "./authmiddleware";
 import router from "./src/routes/main.router";
-
+import { getDbConnection } from "./src/database/db.config";
+// --------------------------
+// Environment Configuration
+// --------------------------
 dotenv.config();
 
+getDbConnection();
+
+// --------------------------
 const app = express();
 
+// Middleware
 app.use(json());
 app.use(
   cors({

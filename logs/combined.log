@@ -2333,3 +2333,28 @@
 2025-04-06T18:19:23.086Z - youtube_summary - info - Task 6799dbbb-5768-428e-835a-bcd4f5549d05 completed successfully
 2025-04-06T18:26:22.659Z - youtube_summary - info - Database setup completed
 2025-04-06T18:26:22.665Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:29:28.497Z - youtube_summary - info - Database setup completed
+2025-04-06T18:29:28.500Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:29:38.596Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:30:51.289Z - youtube_summary - info - Database setup completed
+2025-04-06T18:30:51.293Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:30:59.932Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:31:31.247Z - youtube_summary - info - Database setup completed
+2025-04-06T18:31:31.250Z - youtube_summary - info - Database initialization complete
+2025-04-06T18:31:40.745Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T18:31:40.746Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T18:31:40.747Z - youtube_summary - info - Generated task ID: 654d62dc-a1f7-4a81-9a87-fd2c0accf201
+2025-04-06T18:31:40.747Z - youtube_summary - info - Registering task in database
+2025-04-06T18:31:41.653Z - youtube_summary - info - Starting background processing for task 654d62dc-a1f7-4a81-9a87-fd2c0accf201
+2025-04-06T18:31:41.902Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 654d62dc-a1f7-4a81-9a87-fd2c0accf201
+2025-04-06T18:31:41.903Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T18:31:45.481Z - youtube_summary - info - Received video submission: https://www.youtube.com/watch?v=_FLo14GMYos, model: undefined, language: english
+2025-04-06T18:31:45.482Z - youtube_summary - info - Extracted video ID: _FLo14GMYos
+2025-04-06T18:31:45.482Z - youtube_summary - info - Generated task ID: 3a93c5d6-11aa-4b64-b89c-d54f9b8f7594
+2025-04-06T18:31:45.482Z - youtube_summary - info - Registering task in database
+2025-04-06T18:31:45.888Z - youtube_summary - info - Starting background processing for task 3a93c5d6-11aa-4b64-b89c-d54f9b8f7594
+2025-04-06T18:31:46.544Z - youtube_summary - info - Response data type: array
+2025-04-06T18:31:46.545Z - youtube_summary - info - Successfully extracted transcript of length 5043
+2025-04-06T18:31:46.708Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 3a93c5d6-11aa-4b64-b89c-d54f9b8f7594
+2025-04-06T18:31:46.709Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
+2025-04-06T18:31:48.458Z - youtube_summary - info - OpenAI client initialized successfully
