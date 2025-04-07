@@ -2358,3 +2358,11 @@
 2025-04-06T18:31:46.708Z - youtube_summary - info - Processing video _FLo14GMYos with task ID 3a93c5d6-11aa-4b64-b89c-d54f9b8f7594
 2025-04-06T18:31:46.709Z - youtube_summary - info - Requesting transcript for video _FLo14GMYos
 2025-04-06T18:31:48.458Z - youtube_summary - info - OpenAI client initialized successfully
+2025-04-06T18:31:53.096Z - youtube_summary - error - Error during transcript extraction: Request failed with status code 504
+2025-04-06T18:31:53.096Z - youtube_summary - info - Updating task 3a93c5d6-11aa-4b64-b89c-d54f9b8f7594 as completed
+2025-04-06T18:31:53.396Z - youtube_summary - info - Task 3a93c5d6-11aa-4b64-b89c-d54f9b8f7594 completed successfully
+2025-04-06T18:31:58.805Z - youtube_summary - info - Generated summary with emoji 🏙️
+2025-04-06T18:31:58.806Z - youtube_summary - info - Updating task 654d62dc-a1f7-4a81-9a87-fd2c0accf201 as completed
+2025-04-06T18:31:59.071Z - youtube_summary - info - Task 654d62dc-a1f7-4a81-9a87-fd2c0accf201 completed successfully
+2025-04-07T11:38:47.247Z - youtube_summary - info - Database setup completed
+2025-04-07T11:38:47.251Z - youtube_summary - info - Database initialization complete

@@ -42,6 +42,7 @@ export async function processChat(
   2. respond with new message.
   3. Answer user questions about the note topic.
   4. Engage in a discussion about the note content.
+  5. You must use max_tokens:150 for full rseponse
   You are always helpful, engaging, and informative.
 `;
 
